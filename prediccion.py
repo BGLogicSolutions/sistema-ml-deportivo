@@ -3,7 +3,8 @@ import google.generativeai as genai
 
 # Conexión segura con tu llave
 genai.configure(api_key=os.environ["GEMINI_API_KEY"])
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('gemini-1.5-flash-latest')
+
 
 def ejecutar_analisis():
     # Aquí es donde combinas tus datos con la IA
