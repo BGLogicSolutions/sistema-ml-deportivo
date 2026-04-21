@@ -1,12 +1,11 @@
 import os
+import time # Importante: Nos permite poner el código en pausa
 import pandas as pd
 from google import genai
 
-# Conexión usando el nuevo SDK de Google
 client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
 
 def ejecutar_analisis():
-    # Lista exacta de los archivos CSV europeos
     ligas = [
         'premier_league_2526.csv', 
         'la_liga_2526.csv', 
@@ -16,11 +15,9 @@ def ejecutar_analisis():
     
     resumen_datos = ""
     
-    # Leemos los últimos 5 partidos de cada liga
     for liga in ligas:
         try:
             df = pd.read_csv(liga)
-            # Extraemos: Fecha, Local, Visitante, Goles Local (FTHG) y Goles Visitante (FTAG)
             ultimos = df[['Date', 'HomeTeam', 'AwayTeam', 'FTHG', 'FTAG']].tail(5).to_string(index=False)
             resumen_datos += f"\n--- LIGA: {liga} ---\n{ultimos}\n"
         except Exception as e:
@@ -39,19 +36,35 @@ def ejecutar_analisis():
     
     print("Iniciando motor de predicción europeo con el nuevo SDK...")
     
-    # Llamada a la API de Gemini
-    response = client.models.generate_content(
-        model='gemini-2.5-flash',
-        contents=prompt
-    )
+    # --- SISTEMA DE REINTENTO (ANTISATURACIÓN) ---
+    max_reintentos = 3
     
-    # 1. Mostrar en la consola de GitHub Actions
+    for intento in range(max_reintentos):
+        try:
+            response = client.models.generate_content(
+                model='gemini-2.5-flash',
+                contents=prompt
+            )
+            break # Si la IA responde bien, salimos de este bucle de reintentos
+            
+        except Exception as e:
+            if "503" in str(e) or "UNAVAILABLE" in str(e):
+                print(f"⚠️ Servidor de Google saturado (Intento {intento + 1}/{max_reintentos}). Esperando 20 segundos...")
+                time.sleep(20) # Pausa el script 20 segundos antes de volver a intentar
+                if intento == max_reintentos - 1:
+                    print("❌ El servidor sigue saturado después de 3 intentos. Intenta correr la acción más tarde.")
+                    return
+            else:
+                print(f"❌ Error inesperado de la API: {e}")
+                return
+    
+    # Mostrar resultados
     print("\n" + "="*40)
     print("🏆 PREDICCIONES EUROPEAS GENERADAS 🏆")
     print("="*40)
     print(response.text)
 
-    # 2. Guardar el resultado físicamente en el repositorio
+    # Guardar documento
     print("\nGuardando el reporte en REPORTE_EUROPEO.md...")
     with open("REPORTE_EUROPEO.md", "w", encoding="utf-8") as archivo:
         archivo.write("# 🏆 Análisis Cuantitativo Europeo\n\n")
