@@ -82,3 +82,39 @@ if ligas_procesadas:
     df_final = pd.concat(ligas_procesadas.values(), ignore_index=True)
     df_final.to_csv('reporte_maestro_kelly.csv', index=False)
     print("💾 Archivo 'reporte_maestro_kelly.csv' guardado con éxito. ¡Listo para cobrar!")
+import os
+import requests
+
+# ... (Todo tu código anterior se queda igual) ...
+
+# 4. ALERTA DE TELEGRAM
+print("\n--- 📲 CONECTANDO CON TELEGRAM ---")
+token = os.environ.get('TELEGRAM_TOKEN')
+chat_id = os.environ.get('TELEGRAM_CHAT_ID')
+
+if token and chat_id and ligas_procesadas:
+    # Filtramos solo los partidos donde el Criterio de Kelly nos dice que hay valor
+    df_final = pd.concat(ligas_procesadas.values(), ignore_index=True)
+    apuestas = df_final[df_final['apuesta_sugerida'] > 0]
+    
+    if not apuestas.empty:
+        # Agarramos los 3 mejores bombazos según el modelo
+        top_bets = apuestas.sort_values(by='kelly_local', ascending=False).head(3)
+        
+        mensaje = "🔥 ALERTA DE VALOR (TOP 3) 🔥\n\n"
+        for _, row in top_bets.iterrows():
+            mensaje += f"⚽ {row['HomeTeam']} vs {row['AwayTeam']}\n"
+            mensaje += f"📈 xG: {row['xg_local']:.2f} - {row['xg_visitante']:.2f}\n"
+            mensaje += f"💰 Cuota (Casa): {row[cols[0]]}\n"
+            mensaje += f"💵 Kelly Sugerido: {(row['apuesta_sugerida']*100):.1f}% del Bank\n\n"
+    else:
+        mensaje = "🤖 Motor escaneó los partidos. Hoy no hay apuestas con valor, guarda la cartera."
+        
+    url = f"https://api.telegram.org/bot{token}/sendMessage"
+    try:
+        requests.post(url, data={'chat_id': chat_id, 'text': mensaje})
+        print("🚀 ¡Alerta enviada directo al patrón!")
+    except Exception as e:
+        print(f"⚠️ Falló el envío del mensaje: {e}")
+else:
+    print("⚠️ No se enviaron alertas. Revisa tus Secrets en GitHub.")
