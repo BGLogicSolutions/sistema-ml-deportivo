@@ -1,51 +1,38 @@
-import os
-import pandas as pd
-from google import genai
+name: Ejecutar Modelo Cuantitativo Europeo
 
-# Conexión usando el nuevo SDK de Google
-client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+on: [push]
 
-def ejecutar_analisis():
-    ligas = [
-        'premier_league_2526.csv', 
-        'la_liga_2526.csv', 
-        'serie_a_2526.csv', 
-        'bundesliga_2526.csv'
-    ]
-    
-    resumen_datos = ""
-    
-    for liga in ligas:
-        try:
-            df = pd.read_csv(liga)
-            ultimos = df[['Date', 'HomeTeam', 'AwayTeam', 'FTHG', 'FTAG']].tail(5).to_string(index=False)
-            resumen_datos += f"\n--- LIGA: {liga} ---\n{ultimos}\n"
-        except Exception as e:
-            resumen_datos += f"\nNo se pudo leer {liga}. Error: {e}\n"
-            
-    prompt = f"""
-    Actúa como un analista cuantitativo experto. Usando principios de Sabermetrics y la distribución de Poisson,
-    analiza los siguientes últimos resultados de las ligas europeas:
-    
-    {resumen_datos}
-    
-    Evalúa el rendimiento de goles (FTHG = Goles Local, FTAG = Goles Visitante). 
-    1. Calcula qué equipos muestran la mejor proyección ofensiva actual.
-    2. Sugiere 2 pronósticos de valor (CLV) para los próximos encuentros de estas ligas.
-    """
-    
-    print("Iniciando motor de predicción europeo con el nuevo SDK...")
-    
-    # Llamada a la API usando la nueva estructura
-    response = client.models.generate_content(
-        model='gemini-2.5-flash',
-        contents=prompt
-    )
-    
-    print("\n" + "="*40)
-    print("🏆 PREDICCIONES EUROPEAS GENERADAS 🏆")
-    print("="*40)
-    print(response.text)
+# Le damos permiso al bot para guardar archivos
+permissions:
+  contents: write
 
-if __name__ == "__main__":
-    ejecutar_analisis()
+jobs:
+  analisis:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Descargar el código
+        uses: actions/checkout@v4
+
+      - name: Configurar entorno
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Instalar librerías
+        run: |
+          python -m pip install --upgrade pip
+          pip install google-genai pandas scipy
+
+      - name: Ejecutar motor de predicción
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python prediccion.py
+
+      - name: Guardar reporte generado en el repositorio
+        run: |
+          git config --global user.name 'Sistema Cuantitativo'
+          git config --global user.email 'bot@modelo.com'
+          git add REPORTE_EUROPEO.md
+          git commit -m "📊 Nuevo análisis de valor generado" || echo "Sin cambios"
+          git push
