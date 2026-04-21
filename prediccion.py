@@ -1,11 +1,25 @@
 import os
 import time
+import requests
 from datetime import datetime, timedelta, timezone
 import pandas as pd
 from google import genai
 from google.genai import types
 
 client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+
+def enviar_telegram(mensaje):
+    """Función para mandar el reporte directo a tu celular"""
+    token = os.environ.get('TELEGRAM_TOKEN')
+    chat_id = os.environ.get('TELEGRAM_CHAT_ID')
+    if token and chat_id:
+        url = f"https://api.telegram.org/bot{token}/sendMessage"
+        try:
+            # Mandamos los primeros 4000 caracteres (límite de Telegram)
+            requests.post(url, data={'chat_id': chat_id, 'text': mensaje[:4000]})
+            print("🚀 Reporte enviado por Telegram al patrón.")
+        except Exception as e:
+            print(f"⚠️ Falló el envío a Telegram: {e}")
 
 def ejecutar_analisis():
     zona_horaria = timezone(timedelta(hours=-6))
@@ -40,7 +54,7 @@ def ejecutar_analisis():
     lista_equipos_str = ", ".join(sorted(list(equipos_conocidos)))
 
     # ==========================================
-    # FASE 1: EXPLORACIÓN (Búsqueda del Calendario)
+    # FASE 1: EXPLORACIÓN (BLINDADA CON BACKOFF)
     # ==========================================
     prompt_explorador = f"""
     Hoy es {fecha_str}. Eres un buscador de calendarios deportivos.
@@ -55,35 +69,47 @@ def ejecutar_analisis():
     """
     
     print("\nFase 1: Buscando partidos de hoy en Internet...")
-    try:
-        respuesta_explorador = client.models.generate_content(
-            model='gemini-2.5-flash',
-            contents=prompt_explorador,
-            config=types.GenerateContentConfig(tools=[{"google_search": {}}])
-        )
-        equipos_hoy = [e.strip() for e in respuesta_explorador.text.split(',')]
-    except Exception as e:
-        print(f"Error en la Fase 1: {e}")
+    equipos_hoy = []
+    
+    for intento in range(3):
+        try:
+            respuesta_explorador = client.models.generate_content(
+                model='gemini-2.5-flash',
+                contents=prompt_explorador,
+                config=types.GenerateContentConfig(tools=[{"google_search": {}}])
+            )
+            if "NINGUNO" in respuesta_explorador.text.upper():
+                print("La IA confirmó que no hay encuentros de las grandes ligas hoy.")
+                return
+                
+            # Limpiamos y cruzamos con nuestra base de datos real
+            equipos_hoy = [e.strip() for e in respuesta_explorador.text.split(',') if e.strip() in equipos_conocidos]
+            break
+        except Exception as e:
+            print(f"⚠️ Intento {intento + 1} fallido en Fase 1: {e}")
+            if "503" in str(e) or "UNAVAILABLE" in str(e):
+                print("Servidores saturados, tomando un respiro de 20 segundos...")
+                time.sleep(20)
+                if intento == 2: return
+            else: return
+
+    if not equipos_hoy:
+        print("No se encontraron coincidencias exactas de equipos para hoy.")
         return
 
-    if "NINGUNO" in respuesta_explorador.text.upper() or not equipos_hoy:
-        print("La IA confirmó que no hay encuentros de las grandes ligas hoy.")
-        return
-
-    print(f"Partidos encontrados para los equipos: {equipos_hoy}")
+    print(f"✅ Partidos encontrados para los equipos: {equipos_hoy}")
 
     # ==========================================
     # FASE 2: EXTRACCIÓN HISTÓRICA
     # ==========================================
     contexto_para_ia = ""
     for equipo in equipos_hoy:
-        if equipo in equipos_conocidos:
-            for liga, df in dataframes.items():
-                historial = df[(df['HomeTeam'] == equipo) | (df['AwayTeam'] == equipo)].tail(5)
-                if not historial.empty:
-                    contexto_para_ia += f"\n⚽ Últimos 5 de {equipo} ({liga}):\n"
-                    contexto_para_ia += historial[['Date', 'HomeTeam', 'AwayTeam', 'FTHG', 'FTAG']].to_string(index=False) + "\n"
-                    break # Pasamos al siguiente equipo
+        for liga, df in dataframes.items():
+            historial = df[(df['HomeTeam'] == equipo) | (df['AwayTeam'] == equipo)].tail(5)
+            if not historial.empty:
+                contexto_para_ia += f"\n⚽ Últimos 5 de {equipo} ({liga}):\n"
+                contexto_para_ia += historial[['Date', 'HomeTeam', 'AwayTeam', 'FTHG', 'FTAG']].to_string(index=False) + "\n"
+                break # Pasamos al siguiente equipo
 
     # Leer memoria de errores
     try:
@@ -93,7 +119,7 @@ def ejecutar_analisis():
         memoria_ayer = "Sin registro previo."
 
     # ==========================================
-    # FASE 3: ANÁLISIS CUANTITATIVO Y PREDICCIÓN
+    # FASE 3: ANÁLISIS CUANTITATIVO Y PREDICCIÓN (BLINDADA)
     # ==========================================
     prompt_analista = f"""
     Actúa como un analista cuantitativo deportivo. Hoy es {fecha_str}.
@@ -112,6 +138,7 @@ def ejecutar_analisis():
     """
     
     print("\nFase 2: Ejecutando cálculos de Poisson y Kelly con datos extraídos...")
+    response = None
     
     for intento in range(3):
         try:
@@ -122,19 +149,30 @@ def ejecutar_analisis():
             )
             break
         except Exception as e:
+            print(f"⚠️ Intento {intento + 1} fallido en Fase 3: {e}")
             if "503" in str(e) or "UNAVAILABLE" in str(e):
                 time.sleep(20)
                 if intento == 2: return
             else: return
     
-    print("\nGuardando reporte...")
+    if not response:
+        print("❌ No se pudo generar el análisis de valor.")
+        return
+        
+    print("\nGuardando reporte y notificando...")
+    
+    # 1. Guardar Markdown
     with open("REPORTE_EUROPEO.md", "w", encoding="utf-8") as archivo:
         archivo.write(f"# 📊 Análisis Diario Evolutivo: {fecha_str}\n\n")
         archivo.write(response.text)
 
-    # Actualizar Bitácora
+    # 2. Actualizar Bitácora
     with open("BITACORA.txt", "w", encoding="utf-8") as bitacora:
         bitacora.write(f"Partidos analizados el {fecha_str}:\n{contexto_para_ia}\nEvalúa tu margen de error.")
+
+    # 3. Notificar por Telegram
+    mensaje_telegram = f"🔥 REPORTE CUANTITATIVO - {fecha_str} 🔥\n\n{response.text}"
+    enviar_telegram(mensaje_telegram)
 
 if __name__ == "__main__":
     ejecutar_analisis()
