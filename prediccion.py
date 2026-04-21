@@ -11,15 +11,8 @@ def ejecutar_analisis():
     zona_horaria = timezone(timedelta(hours=-6))
     hoy = datetime.now(zona_horaria).date()
     fecha_str = hoy.strftime("%d/%m/%Y")
-    print(f"Buscando partidos para hoy: {fecha_str}")
+    print(f"Iniciando Agente Autónomo. Fecha: {fecha_str}")
     
-    # --- 1. LEER LA MEMORIA DE AYER ---
-    try:
-        with open("BITACORA.txt", "r", encoding="utf-8") as f:
-            memoria_ayer = f.read()
-    except FileNotFoundError:
-        memoria_ayer = "No hay registro de predicciones anteriores para auditar."
-
     archivos_masivos = {
         "La Liga": "Laliga2326.csv",
         "Premier League": "Premier2326.csv",
@@ -27,92 +20,121 @@ def ejecutar_analisis():
         "Bundesliga": "Bundesliga2326.csv"
     }
     
-    contexto_para_ia = ""
-    partidos_encontrados = False
+    # 1. Recopilar todos los equipos disponibles y leer los CSV
+    dataframes = {}
+    equipos_conocidos = set()
     
     for liga, archivo in archivos_masivos.items():
         try:
             df = pd.read_csv(archivo, low_memory=False)
-            df['Fecha_Limpia'] = pd.to_datetime(df['Date'], dayfirst=True, errors='coerce').dt.date
-            partidos_hoy = df[df['Fecha_Limpia'] == hoy]
-            
-            if not partidos_hoy.empty:
-                partidos_encontrados = True
-                contexto_para_ia += f"\n\n--- 🏆 {liga.upper()} (HOY) ---\n"
-                
-                for _, partido in partidos_hoy.iterrows():
-                    local = partido['HomeTeam']
-                    visitante = partido['AwayTeam']
-                    
-                    historial_local = df[(df['HomeTeam'] == local) | (df['AwayTeam'] == local)].tail(5)
-                    historial_visitante = df[(df['HomeTeam'] == visitante) | (df['AwayTeam'] == visitante)].tail(5)
-                    
-                    contexto_para_ia += f"⚽ {local} vs {visitante}\n"
-                    contexto_para_ia += f"Últimos 5 de {local}:\n{historial_local[['Date', 'HomeTeam', 'AwayTeam', 'FTHG', 'FTAG']].to_string(index=False)}\n"
-                    contexto_para_ia += f"Últimos 5 de {visitante}:\n{historial_visitante[['Date', 'HomeTeam', 'AwayTeam', 'FTHG', 'FTAG']].to_string(index=False)}\n"
-                    
+            dataframes[liga] = df
+            equipos_conocidos.update(df['HomeTeam'].dropna().unique())
+            equipos_conocidos.update(df['AwayTeam'].dropna().unique())
         except Exception as e:
-            print(f"Error procesando {archivo}: {e}")
+            print(f"Aviso: No se pudo cargar {archivo} - {e}")
 
-    if not partidos_encontrados:
-        print("No hay partidos para hoy.")
+    if not equipos_conocidos:
+        print("Error: No se pudo leer ningún equipo de las bases de datos.")
         return
 
-    # --- 2. EL PROMPT EVOLUTIVO (AUDITORÍA + PREDICCIÓN) ---
-    prompt = f"""
-    Actúa como un analista cuantitativo deportivo. Hoy es {fecha_str}.
-    
-    FASE 1: AUDITORÍA DE TUS ERRORES (SELF-REFLECTION)
-    Este es el registro de tu último análisis:
-    {memoria_ayer}
-    
-    Instrucción de Auditoría:
-    - Usa tu herramienta de BÚSQUEDA EN GOOGLE para investigar el resultado real de esos partidos.
-    - Si tu predicción fue errónea (ej. predijiste 2-1 y fue 4-3), realiza un diagnóstico crítico: ¿Subestimaste el xG visitante? ¿La distribución de Poisson falló por una expulsión o clima que no viste? ¿Tu cálculo del Criterio de Kelly fue demasiado agresivo?
-    - Ajusta tu lógica matemática internamente basándote en este error.
+    lista_equipos_str = ", ".join(sorted(list(equipos_conocidos)))
 
-    FASE 2: PROYECCIONES DE HOY (CALIBRADAS)
-    Basado en tu nuevo aprendizaje y el historial cruzado, analiza los partidos de HOY:
-    {contexto_para_ia}
+    # ==========================================
+    # FASE 1: EXPLORACIÓN (Búsqueda del Calendario)
+    # ==========================================
+    prompt_explorador = f"""
+    Hoy es {fecha_str}. Eres un buscador de calendarios deportivos.
+    Usa tu herramienta de BÚSQUEDA EN GOOGLE para investigar qué partidos de las ligas principales (España, Inglaterra, Italia, Alemania) se juegan el día de HOY.
     
-    Instrucciones de Predicción:
-    1. Busca noticias en vivo de estos equipos.
-    2. Aplica Poisson y Sabermetrics con la calibración que obtuviste en la Fase 1.
-    3. Entrega el pronóstico de valor (CLV).
-    4. Sugiere la gestión de capital con Kelly.
+    IMPORTANTE: De los equipos que juegan hoy, necesito que cruces sus nombres con esta lista exacta de equipos de mi base de datos:
+    {lista_equipos_str}
+    
+    Devuelve ÚNICAMENTE los nombres EXACTOS de mi lista que juegan hoy, separados por comas. 
+    Ejemplo de respuesta esperada: Real Madrid, Alaves, Ath Bilbao, Osasuna
+    Si no hay partidos hoy, responde: NINGUNO
     """
     
-    print("Iniciando IA con Auditoría de errores y búsqueda en Internet...")
+    print("\nFase 1: Buscando partidos de hoy en Internet...")
+    try:
+        respuesta_explorador = client.models.generate_content(
+            model='gemini-2.5-flash',
+            contents=prompt_explorador,
+            config=types.GenerateContentConfig(tools=[{"google_search": {}}])
+        )
+        equipos_hoy = [e.strip() for e in respuesta_explorador.text.split(',')]
+    except Exception as e:
+        print(f"Error en la Fase 1: {e}")
+        return
+
+    if "NINGUNO" in respuesta_explorador.text.upper() or not equipos_hoy:
+        print("La IA confirmó que no hay encuentros de las grandes ligas hoy.")
+        return
+
+    print(f"Partidos encontrados para los equipos: {equipos_hoy}")
+
+    # ==========================================
+    # FASE 2: EXTRACCIÓN HISTÓRICA
+    # ==========================================
+    contexto_para_ia = ""
+    for equipo in equipos_hoy:
+        if equipo in equipos_conocidos:
+            for liga, df in dataframes.items():
+                historial = df[(df['HomeTeam'] == equipo) | (df['AwayTeam'] == equipo)].tail(5)
+                if not historial.empty:
+                    contexto_para_ia += f"\n⚽ Últimos 5 de {equipo} ({liga}):\n"
+                    contexto_para_ia += historial[['Date', 'HomeTeam', 'AwayTeam', 'FTHG', 'FTAG']].to_string(index=False) + "\n"
+                    break # Pasamos al siguiente equipo
+
+    # Leer memoria de errores
+    try:
+        with open("BITACORA.txt", "r", encoding="utf-8") as f:
+            memoria_ayer = f.read()
+    except FileNotFoundError:
+        memoria_ayer = "Sin registro previo."
+
+    # ==========================================
+    # FASE 3: ANÁLISIS CUANTITATIVO Y PREDICCIÓN
+    # ==========================================
+    prompt_analista = f"""
+    Actúa como un analista cuantitativo deportivo. Hoy es {fecha_str}.
     
-    max_reintentos = 3
-    for intento in range(max_reintentos):
+    1. MEMORIA Y AUDITORÍA: Revisa esta bitácora pasada, busca en internet cómo terminaron esos juegos y ajusta tus cálculos si te equivocaste:
+    {memoria_ayer}
+    
+    2. ANÁLISIS DE HOY: Aquí tienes el historial reciente de los equipos que juegan HOY extraído directamente de nuestra base de datos:
+    {contexto_para_ia}
+    
+    INSTRUCCIONES FINALES:
+    - Busca en Google noticias en vivo de estos equipos (alineaciones, lesiones de hoy).
+    - Aplica la distribución de Poisson y Sabermetrics sobre el historial proporcionado (xG).
+    - Sugiere el pronóstico de mayor valor (CLV).
+    - Recomienda el tamaño de inversión usando el Criterio de Kelly.
+    """
+    
+    print("\nFase 2: Ejecutando cálculos de Poisson y Kelly con datos extraídos...")
+    
+    for intento in range(3):
         try:
             response = client.models.generate_content(
                 model='gemini-2.5-flash',
-                contents=prompt,
-                config=types.GenerateContentConfig(
-                    tools=[{"google_search": {}}]
-                )
+                contents=prompt_analista,
+                config=types.GenerateContentConfig(tools=[{"google_search": {}}])
             )
             break
         except Exception as e:
             if "503" in str(e) or "UNAVAILABLE" in str(e):
                 time.sleep(20)
-                if intento == max_reintentos - 1: return
-            else:
-                return
+                if intento == 2: return
+            else: return
     
-    # --- 3. GUARDAR EL REPORTE Y LA NUEVA BITÁCORA ---
-    print("\nGuardando reporte y actualizando la memoria...")
-    
+    print("\nGuardando reporte...")
     with open("REPORTE_EUROPEO.md", "w", encoding="utf-8") as archivo:
-        archivo.write(f"# 📊 Análisis Diario y Auditoría: {fecha_str}\n\n")
+        archivo.write(f"# 📊 Análisis Diario Evolutivo: {fecha_str}\n\n")
         archivo.write(response.text)
 
-    # Extraemos solo un resumen de la predicción de hoy para que la lea mañana
-    resumen_para_manana = f"Predicciones hechas el {fecha_str} para los partidos: {contexto_para_ia}"
+    # Actualizar Bitácora
     with open("BITACORA.txt", "w", encoding="utf-8") as bitacora:
-        bitacora.write(resumen_para_manana + "\n(Busca en internet qué predijiste exactamente en tu respuesta y compáralo con el resultado real).")
+        bitacora.write(f"Partidos analizados el {fecha_str}:\n{contexto_para_ia}\nEvalúa tu margen de error.")
 
 if __name__ == "__main__":
     ejecutar_analisis()
