@@ -2,4 +2,4 @@
 
 **Fecha:** 21/04/2026
 
-No hay encuentros programados en las bases de datos para el día de hoy.
+Los archivos CSV no contienen encuentros programados para el día de hoy.
