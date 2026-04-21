@@ -1,6 +1,9 @@
 name: Ejecutar Modelo Cuantitativo Europeo
 
 on:
+  schedule:
+    # Esto le dice al robot que corra todos los días a las 10:00 AM (Hora UTC) / Aprox 4:00 AM (CDMX)
+    - cron: '0 10 * * *'
   push:
   workflow_dispatch:
 
@@ -15,7 +18,7 @@ jobs:
       - name: Descargar el código
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Necesario para que el robot pueda sincronizarse bien
+          fetch-depth: 0
 
       - name: Configurar entorno de Python
         uses: actions/setup-python@v4
@@ -37,6 +40,6 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add REPORTE_EUROPEO.md
-          git commit -m "📊 Nuevo análisis de valor generado" || echo "Sin cambios"
+          git commit -m "📊 Análisis Diario Automatizado" || echo "Sin cambios"
           git pull --rebase origin main
           git push
