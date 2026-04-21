@@ -1,8 +1,10 @@
 name: Ejecutar Modelo Cuantitativo Europeo
 
-on: [push]
+# Se activa al subir archivos O con el botón manual
+on:
+  push:
+  workflow_dispatch:
 
-# Le damos permiso al bot para guardar archivos
 permissions:
   contents: write
 
@@ -14,7 +16,7 @@ jobs:
       - name: Descargar el código
         uses: actions/checkout@v4
 
-      - name: Configurar entorno
+      - name: Configurar entorno de Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
@@ -29,10 +31,10 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python prediccion.py
 
-      - name: Guardar reporte generado en el repositorio
+      - name: Guardar reporte generado
         run: |
-          git config --global user.name 'Sistema Cuantitativo'
-          git config --global user.email 'bot@modelo.com'
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add REPORTE_EUROPEO.md
           git commit -m "📊 Nuevo análisis de valor generado" || echo "Sin cambios"
           git push
