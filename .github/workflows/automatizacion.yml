@@ -1,46 +1,41 @@
-name: Ejecutar Modelo Cuantitativo Europeo
+name: Agente Autónomo Cuantitativo
 
 on:
-  schedule:
-    # Esto le dice al robot que corra todos los días a las 10:00 AM (Hora UTC) / Aprox 4:00 AM (CDMX)
-    - cron: '0 10 * * *'
   push:
-  workflow_dispatch:
-
-permissions:
-  contents: write
+    paths:
+      - '**.csv' # Se ejecuta al detectar nuevos resultados
+  workflow_dispatch: # Botón para forzar la ejecución manual
+  schedule:
+    - cron: '0 12 * * *' # Se ejecuta diario a las 12:00 UTC (opcional)
 
 jobs:
-  analisis:
+  analisis_diario:
     runs-on: ubuntu-latest
-    
+
     steps:
-      - name: Descargar el código
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+    - name: 📥 Clonar el repositorio
+      uses: actions/checkout@v3
 
-      - name: Configurar entorno de Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.11'
+    - name: 🐍 Configurar Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
 
-      - name: Instalar librerías
-        run: |
-          python -m pip install --upgrade pip
-          pip install google-genai pandas scipy
+    - name: ⚙️ Instalar librerías
+      run: |
+        python -m pip install --upgrade pip
+        pip install pandas google-genai
 
-      - name: Ejecutar motor de predicción
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python prediccion.py
+    - name: 🚀 Ejecutar Cerebro Cuantitativo
+      env:
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      run: python prediccion.py
 
-      - name: Guardar reporte generado
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add REPORTE_EUROPEO.md
-          git add BITACORA.txt # <-- Agregamos esta línea
-          git commit -m "📊 Análisis y Auditoría Diaria" || echo "Sin cambios"
-          git pull --rebase origin main
-          git push
+    - name: 💾 Guardar Reporte y Bitácora en el Repositorio
+      run: |
+        git config --global user.name "Bot Cuantitativo"
+        git config --global user.email "bot@bgsolutions.com"
+        git add REPORTE_EUROPEO.md BITACORA.txt
+        # Solo hace el commit si hay cambios reales en los archivos
+        git commit -m "🤖 Actualización diaria: Reporte y Bitácora" || echo "No hay cambios para guardar"
+        git push
