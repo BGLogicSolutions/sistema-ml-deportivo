@@ -1,14 +1,11 @@
 import os
 import pandas as pd
-import google.generativeai as genai
+from google import genai
 
-# Conexión con tu llave secreta y la versión correcta del modelo
-genai.configure(api_key=os.environ["GEMINI_API_KEY"])
-model = model = genai.GenerativeModel('gemini-pro')
-
+# Conexión usando el nuevo SDK de Google
+client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
 
 def ejecutar_analisis():
-    # Lista exacta de los archivos que acabas de subir
     ligas = [
         'premier_league_2526.csv', 
         'la_liga_2526.csv', 
@@ -18,11 +15,9 @@ def ejecutar_analisis():
     
     resumen_datos = ""
     
-    # Leemos los últimos 5 partidos de cada liga
     for liga in ligas:
         try:
             df = pd.read_csv(liga)
-            # Extraemos: Fecha, Local, Visitante, Goles Local (FTHG) y Goles Visitante (FTAG)
             ultimos = df[['Date', 'HomeTeam', 'AwayTeam', 'FTHG', 'FTAG']].tail(5).to_string(index=False)
             resumen_datos += f"\n--- LIGA: {liga} ---\n{ultimos}\n"
         except Exception as e:
@@ -39,12 +34,18 @@ def ejecutar_analisis():
     2. Sugiere 2 pronósticos de valor (CLV) para los próximos encuentros de estas ligas.
     """
     
-    print("Iniciando motor de predicción europeo...")
-    respuesta = model.generate_content(prompt)
+    print("Iniciando motor de predicción europeo con el nuevo SDK...")
+    
+    # Llamada a la API usando la nueva estructura
+    response = client.models.generate_content(
+        model='gemini-2.5-flash',
+        contents=prompt
+    )
+    
     print("\n" + "="*40)
     print("🏆 PREDICCIONES EUROPEAS GENERADAS 🏆")
     print("="*40)
-    print(respuesta.text)
+    print(response.text)
 
 if __name__ == "__main__":
     ejecutar_analisis()
