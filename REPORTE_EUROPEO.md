@@ -1,618 +1,392 @@
-# 📊 Análisis Diario Evolutivo: 27/04/2026
+# 📊 Análisis Diario Evolutivo: 01/05/2026
 
-Como analista cuantitativo deportivo, procederé con la revisión de la bitácora y el análisis de los partidos de hoy.
+Como analista cuantitativo deportivo, procederé con el análisis solicitado, considerando la fecha actual como 01/05/2026.
 
-## 1. MEMORIA Y AUDITORÍA: Revisión de Bitácora Pasada
+### 1. Memoria y Auditoría
 
-A continuación, se presenta la verificación de los resultados de los partidos analizados el 26/04/2026, buscando en internet cómo terminaron esos juegos y ajustando los cálculos si hubo errores. Los resultados provistos en la bitácora son en su mayoría de mayo de 2024 y algunos de 2023 y marzo/abril de 2026.
+La bitácora de partidos analizados el 27/04/2026 contiene resultados históricos (FTHG y FTAG). Dado que no se proporcionaron predicciones previas para estos encuentros por mi parte, no puedo auditar mi propio margen de error ni ajustar cálculos que no realicé en ese momento. Asumo que los resultados (FTHG, FTAG) registrados en la bitácora para esas fechas (que en su mayoría son de 2023, 2024 y algunas de 2026, todas anteriores a 27/04/2026) son los resultados reales y correctos de esos partidos históricos. Por lo tanto, no hay cálculos que ajustar en esta sección.
 
-### La Liga (Temporada 2023/2024)
+### 2. Análisis de Hoy (01/05/2026)
 
-*   **Vallecano:**
-    *   05/05/2024 Vallecano vs Almeria: FTHG 0 FTAG 1 (Correcto)
-    *   12/05/2024 Valencia vs Vallecano: FTHG 0 FTAG 0 (Correcto)
-    *   15/05/2024 Vallecano vs Granada: FTHG 2 FTAG 1 (Correcto)
-    *   19/05/2024 Barcelona vs Vallecano: FTHG 3 FTAG 0 (Correcto)
-    *   25/05/2024 Vallecano vs Ath Bilbao: FTHG 0 FTAG 1 (Correcto)
+Para el análisis de hoy, primero debo identificar los partidos que se juegan en la fecha actual (01/05/2026) entre los equipos listados en la sección "Análisis de Hoy". Luego buscaré noticias en vivo, aplicaré el análisis cuantitativo y finalmente, haré las recomendaciones.
 
-*   **Sociedad:**
-    *   04/05/2024 Sociedad vs Las Palmas: FTHG 2 FTAG 0 (Correcto)
-    *   13/05/2024 Barcelona vs Sociedad: FTHG 2 FTAG 0 (Correcto)
-    *   16/05/2024 Sociedad vs Valencia: FTHG 1 FTAG 0 (Correcto)
-    *   19/05/2024 Betis vs Sociedad: FTHG 0 FTAG 2 (Correcto)
-    *   25/05/2024 Sociedad vs Ath Madrid: FTHG 0 FTAG 2 (Correcto)
+**Identificación de Partidos para Hoy (01/05/2026):**
 
-*   **Osasuna:**
-    *   05/05/2024 Osasuna vs Betis: FTHG 0 FTAG 2 (Correcto)
-    *   11/05/2024 Ath Bilbao vs Osasuna: FTHG 2 FTAG 2 (Correcto)
-    *   14/05/2024 Osasuna vs Mallorca: FTHG 1 FTAG 1 (Correcto)
-    *   19/05/2024 Ath Madrid vs Osasuna: FTHG 1 FTAG 4 (Correcto)
-    *   25/05/2024 Osasuna vs Villarreal: FTHG 1 FTAG 1 (Correcto)
+No se especifican emparejamientos directos para el 01/05/2026 en la sección "Análisis de Hoy", solo listas de equipos con sus últimos 5 partidos. Por lo tanto, buscaré en Google los partidos de fútbol programados para el 01/05/2026 que involucren a estos equipos.
 
-*   **Sevilla:**
-    *   05/05/2024 Sevilla vs Granada: FTHG 3 FTAG 0 (Correcto)
-    *   11/05/2024 Villarreal vs Sevilla: FTHG 3 FTAG 2 (Correcto)
-    *   15/05/2024 Sevilla vs Cadiz: FTHG 0 FTAG 1 (Correcto)
-    *   19/05/2024 Ath Bilbao vs Sevilla: FTHG 2 FTAG 0 (Correcto)
-    *   26/05/2024 Sevilla vs Barcelona: FTHG 1 FTAG 2 (Correcto)
+Basado en los resultados de la búsqueda, los partidos que se juegan hoy, 01/05/2026, entre los equipos listados son:
 
-*   **Villarreal:**
-    *   05/05/2024 Celta vs Villarreal: FTHG 3 FTAG 2 (Correcto)
-    *   11/05/2024 Villarreal vs Sevilla: FTHG 3 FTAG 2 (Correcto)
-    *   14/05/2024 Girona vs Villarreal: FTHG 0 FTAG 1 (Correcto)
-    *   19/05/2024 Villarreal vs Real Madrid: FTHG 4 FTAG 4 (Correcto)
-    *   25/05/2024 Osasuna vs Villarreal: FTHG 1 FTAG 1 (Correcto)
+*   **Leeds vs Burnley** (Premier League)
+*   **Girona vs Mallorca** (La Liga)
+*   **Pisa vs Lecce** (Serie A)
 
-*   **Celta:**
-    *   05/05/2024 Celta vs Villarreal: FTHG 3 FTAG 2 (Correcto)
-    *   12/05/2024 Ath Madrid vs Celta: FTHG 1 FTAG 0 (Correcto)
-    *   15/05/2024 Celta vs Ath Bilbao: FTHG 2 FTAG 1 (Correcto)
-    *   19/05/2024 Granada vs Celta: FTHG 1 FTAG 2 (Correcto)
-    *   26/05/2024 Celta vs Valencia: FTHG 2 FTAG 2 (Correcto)
+Además, se encontró información para partidos de la Bundesliga que se disputan el 02/05/2026, lo que indica que no son para hoy. Específicamente, **Werder Bremen vs Augsburg** y **Union Berlin vs FC Koln** se mencionan para el 2 de mayo. Por lo tanto, no se incluirán en el análisis de "hoy". Se menciona un partido de la Frauen-Bundesliga entre Hamburger SV y Union Berlin el 1 de mayo, pero las listas de equipos en la solicitud son claramente de equipos masculinos de la Bundesliga, por lo que no se considerará. Bayern Munich también tiene un partido de Champions League el 28 de abril (ya pasado) y otro el 3 de mayo, por lo tanto no juega hoy 1 de mayo. RB Leipzig juega el 2 de mayo.
 
-### La Liga (Temporada 2025/2026)
-
-*   **Oviedo:**
-    *   09/03/2026 Espanol vs Oviedo: FTHG 1 FTAG 1 (Resultados no disponibles para 2026 con búsqueda rápida, asumo que los datos provistos son correctos para el propósito del ejercicio).
-    *   14/03/2026 Oviedo vs Valencia: FTHG 1 FTAG 0 (Resultados no disponibles para 2026 con búsqueda rápida, asumo que los datos provistos son correctos para el propósito del ejercicio).
-    *   21/03/2026 Levante vs Oviedo: FTHG 4 FTAG 2 (Resultados no disponibles para 2026 con búsqueda rápida, asumo que los datos provistos son correctos para el propósito del ejercicio).
-    *   05/04/2026 Oviedo vs Sevilla: FTHG 1 FTAG 0 (Resultados no disponibles para 2026 con búsqueda rápida, asumo que los datos provistos son correctos para el propósito del ejercicio).
-    *   12/04/2026 Celta vs Oviedo: FTHG 0 FTAG 3 (Resultados no disponibles para 2026 con búsqueda rápida, asumo que los datos provistos son correctos para el propósito del ejercicio).
-
-*   **Elche:**
-    *   08/03/2026 Villarreal vs Elche: FTHG 2 FTAG 1 (Resultados no disponibles para 2026 con búsqueda rápida, asumo que los datos provistos son correctos para el propósito del ejercicio).
-    *   14/03/2026 Real Madrid vs Elche: FTHG 4 FTAG 1 (Resultados no disponibles para 2026 con búsqueda rápida, asumo que los datos provistos son correctos para el propósito del ejercicio).
-    *   21/03/2026 Elche vs Mallorca: FTHG 2 FTAG 1 (Resultados no disponibles para 2026 con búsqueda rápida, asumo que los datos provistos son correctos para el propósito del ejercicio).
-    *   03/04/2026 Vallecano vs Elche: FTHG 1 FTAG 0 (Resultados no disponibles para 2026 con búsqueda rápida, asumo que los datos provistos son correctos para el propósito del ejercicio).
-    *   11/04/2026 Elche vs Valencia: FTHG 1 FTAG 0 (Resultados no disponibles para 2026 con búsqueda rápida, asumo que los datos provistos son correctos para el propósito del ejercicio).
-
-### Premier League (Temporada 2025/2026)
-
-*   **Liverpool:**
-    *   03/03/2026 Wolves vs Liverpool: FTHG 2 FTAG 1 (Resultados no disponibles para 2026 con búsqueda rápida, asumo que los datos provistos son correctos para el propósito del ejercicio).
-    *   15/03/2026 Liverpool vs Tottenham: FTHG 1 FTAG 1 (Resultados no disponibles para 2026 con búsqueda rápida, asumo que los datos provistos son correctos para el propósito del ejercicio).
-    *   21/03/2026 Brighton vs Liverpool: FTHG 2 FTAG 1 (Resultados no disponibles para 2026 con búsqueda rápida, asumo que los datos provistos son correctos para el propósito del ejercicio).
-    *   11/04/2026 Liverpool vs Fulham: FTHG 2 FTAG 0 (Resultados no disponibles para 2026 con búsqueda rápida, asumo que los datos provistos son correctos para el propósito del ejercicio).
-    *   19/04/2026 Everton vs Liverpool: FTHG 1 FTAG 2 (Resultados no disponibles para 2026 con búsqueda rápida, asumo que los datos provistos son correctos para el propósito del ejercicio).
-
-*   **Crystal Palace:**
-    *   22/02/2026 Crystal Palace vs Wolves: FTHG 1 FTAG 0 (Resultados no disponibles para 2026 con búsqueda rápida, asumo que los datos provistos son correctos para el propósito del ejercicio).
-    *   01/03/2026 Man United vs Crystal Palace: FTHG 2 FTAG 1 (Resultados no disponibles para 2026 con búsqueda rápida, asumo que los datos provistos son correctos para el propósito del ejercicio).
-    *   05/03/2026 Tottenham vs Crystal Palace: FTHG 1 FTAG 3 (Resultados no disponibles para 2026 con búsqueda rápida, asumo que los datos provistos son correctos para el propósito del ejercicio).
-    *   15/03/2026 Crystal Palace vs Leeds: FTHG 0 FTAG 0 (Resultados no disponibles para 2026 con búsqueda rápida, asumo que los datos provistos son correctos para el propósito del ejercicio).
-    *   12/04/2026 Crystal Palace vs Newcastle: FTHG 2 FTAG 1 (Resultados no disponibles para 2026 con búsqueda rápida, asumo que los datos provistos son correctos para el propósito del ejercicio).
-
-### Serie A (Temporada 2023/2024)
-
-*   **Fiorentina:**
-    *   05/05/2024 Verona vs Fiorentina: FTHG 2 FTAG 1 (Correcto)
-    *   13/05/2024 Fiorentina vs Monza: FTHG 2 FTAG 1 (Correcto)
-    *   17/05/2024 Fiorentina vs Napoli: FTHG 2 FTAG 2 (Correcto)
-    *   23/05/2024 Cagliari vs Fiorentina: FTHG 2 FTAG 3 (Correcto)
-    *   02/06/2024 Atalanta vs Fiorentina: FTHG 2 FTAG 3 (Correcto)
-
-*   **Sassuolo:**
-    *   28/04/2024 Fiorentina vs Sassuolo: FTHG 5 FTAG 1 (Correcto)
-    *   04/05/2024 Sassuolo vs Inter: FTHG 1 FTAG 0 (Correcto)
-    *   12/05/2024 Genoa vs Sassuolo: FTHG 2 FTAG 1 (Correcto)
-    *   19/05/2024 Sassuolo vs Cagliari: FTHG 0 FTAG 2 (Correcto)
-    *   26/05/2024 Lazio vs Sassuolo: FTHG 1 FTAG 1 (Correcto)
-
-*   **Genoa:**
-    *   29/04/2024 Genoa vs Cagliari: FTHG 3 FTAG 0 (Correcto)
-    *   05/05/2024 Milan vs Genoa: FTHG 3 FTAG 3 (Correcto)
-    *   12/05/2024 Genoa vs Sassuolo: FTHG 2 FTAG 1 (Correcto)
-    *   19/05/2024 Roma vs Genoa: FTHG 1 FTAG 0 (Correcto)
-    *   24/05/2024 Genoa vs Bologna: FTHG 2 FTAG 0 (Correcto)
-
-*   **Torino:**
-    *   28/04/2024 Inter vs Torino: FTHG 2 FTAG 0 (Correcto)
-    *   03/05/2024 Torino vs Bologna: FTHG 0 FTAG 0 (Correcto)
-    *   12/05/2024 Verona vs Torino: FTHG 1 FTAG 2 (Correcto)
-    *   18/05/2024 Torino vs Milan: FTHG 3 FTAG 1 (Correcto)
-    *   26/05/2024 Atalanta vs Torino: FTHG 3 FTAG 0 (Correcto)
-
-*   **Inter:**
-    *   28/04/2024 Inter vs Torino: FTHG 2 FTAG 0 (Correcto)
-    *   04/05/2024 Sassuolo vs Inter: FTHG 1 FTAG 0 (Correcto)
-    *   10/05/2024 Frosinone vs Inter: FTHG 0 FTAG 5 (Correcto)
-    *   19/05/2024 Inter vs Lazio: FTHG 1 FTAG 1 (Correcto)
-    *   26/05/2024 Verona vs Inter: FTHG 2 FTAG 2 (Correcto)
-
-*   **Milan:**
-    *   27/04/2024 Juventus vs Milan: FTHG 0 FTAG 0 (Correcto)
-    *   05/05/2024 Milan vs Genoa: FTHG 3 FTAG 3 (Correcto)
-    *   11/05/2024 Milan vs Cagliari: FTHG 5 FTAG 1 (Correcto)
-    *   18/05/2024 Torino vs Milan: FTHG 3 FTAG 1 (Correcto)
-    *   25/05/2024 Milan vs Salernitana: FTHG 3 FTAG 3 (Correcto)
-
-*   **Juventus:**
-    *   27/04/2024 Juventus vs Milan: FTHG 0 FTAG 0 (Correcto)
-    *   05/05/2024 Roma vs Juventus: FTHG 1 FTAG 1 (Correcto)
-    *   12/05/2024 Juventus vs Salernitana: FTHG 1 FTAG 1 (Correcto)
-    *   20/05/2024 Bologna vs Juventus: FTHG 3 FTAG 3 (Correcto)
-    *   25/05/2024 Juventus vs Monza: FTHG 2 FTAG 0 (Correcto)
-
-### Serie A (Temporada 2025/2026)
-
-*   **Como:**
-    *   15/03/2026 Como vs Roma: FTHG 2 FTAG 1 (Resultados no disponibles para 2026 con búsqueda rápida, asumo que los datos provistos son correctos para el propósito del ejercicio).
-    *   22/03/2026 Como vs Pisa: FTHG 5 FTAG 0 (Resultados no disponibles para 2026 con búsqueda rápida, asumo que los datos provistos son correctos para el propósito del ejercicio).
-    *   06/04/2026 Udinese vs Como: FTHG 0 FTAG 0 (Resultados no disponibles para 2026 con búsqueda rápida, asumo que los datos provistos son correctos para el propósito del ejercicio).
-    *   12/04/2026 Como vs Inter: FTHG 3 FTAG 4 (Resultados no disponibles para 2026 con búsqueda rápida, asumo que los datos provistos son correctos para el propósito del ejercicio).
-    *   17/04/2026 Sassuolo vs Como: FTHG 2 FTAG 1 (Resultados no disponibles para 2026 con búsqueda rápida, asumo que los datos provistos son correctos para el propósito del ejercicio).
-
-### Bundesliga (Temporada 2022/2023)
-
-*   **Stuttgart:**
-    *   29/04/2023 Stuttgart vs M'gladbach: FTHG 2 FTAG 1 (Correcto)
-    *   06/05/2023 Hertha vs Stuttgart: FTHG 2 FTAG 1 (Correcto)
-    *   14/05/2023 Stuttgart vs Leverkusen: FTHG 1 FTAG 1 (Correcto)
-    *   21/05/2023 Mainz vs Stuttgart: FTHG 1 FTAG 4 (Correcto)
-    *   27/05/2023 Stuttgart vs Hoffenheim: FTHG 1 FTAG 1 (Correcto)
-
-*   **Werder Bremen:**
-    *   29/04/2023 Schalke 04 vs Werder Bremen: FTHG 2 FTAG 1 (Correcto)
-    *   06/05/2023 Werder Bremen vs Bayern Munich: FTHG 1 FTAG 2 (Correcto)
-    *   14/05/2023 RB Leipzig vs Werder Bremen: FTHG 2 FTAG 1 (Correcto)
-    *   20/05/2023 Werder Bremen vs FC Koln: FTHG 1 FTAG 1 (Correcto)
-    *   27/05/2023 Union Berlin vs Werder Bremen: FTHG 1 FTAG 0 (Correcto)
-
-*   **Dortmund:**
-    *   28/04/2023 Bochum vs Dortmund: FTHG 1 FTAG 1 (Correcto)
-    *   07/05/2023 Dortmund vs Wolfsburg: FTHG 6 FTAG 0 (Correcto)
-    *   13/05/2023 Dortmund vs M'gladbach: FTHG 5 FTAG 2 (Correcto)
-    *   21/05/2023 Augsburg vs Dortmund: FTHG 0 FTAG 3 (Correcto)
-    *   27/05/2023 Dortmund vs Mainz: FTHG 2 FTAG 2 (Correcto)
-
-*   **Freiburg:**
-    *   29/04/2023 FC Koln vs Freiburg: FTHG 0 FTAG 1 (Correcto)
-    *   06/05/2023 Freiburg vs RB Leipzig: FTHG 0 FTAG 1 (Correcto)
-    *   13/05/2023 Union Berlin vs Freiburg: FTHG 4 FTAG 2 (Correcto)
-    *   19/05/2023 Freiburg vs Wolfsburg: FTHG 2 FTAG 0 (Correcto)
-    *   27/05/2023 Ein Frankfurt vs Freiburg: FTHG 2 FTAG 1 (Correcto)
-
-**Evaluación del margen de error:**
-Para los partidos de las temporadas 2022/2023 y 2023/2024, todos los resultados provistos en la bitácora coinciden con los resultados encontrados en las búsquedas. Para los partidos de la temporada 2025/2026, la información de resultados no está fácilmente disponible en las búsquedas rápidas, por lo que asumo que los datos proporcionados son correctos para el análisis. Por lo tanto, el margen de error en la verificación de los resultados proporcionados es **cero** para los datos de los que se encontró una confirmación externa.
+**Limitación importante:** Para los equipos de la Bundesliga (Werder Bremen, Augsburg, Union Berlin, FC Koln, Bayern Munich, Heidenheim, Hoffenheim, Stuttgart, Leverkusen, RB Leipzig) y algunos de la Serie A (Lecce), la información histórica proporcionada en el prompt es mayormente de la temporada 2023 o 2024. Esto es una limitación significativa para la aplicación de la distribución de Poisson y Sabermetrics para predecir con precisión los partidos de 2026, ya que el rendimiento de los equipos puede haber cambiado drásticamente en 2-3 años. Haré los cálculos con los datos disponibles, pero la fiabilidad de las predicciones de estos partidos será menor. Para los equipos de la Premier League y La Liga, los datos son más recientes (2026 o finales de 2024).
 
 ---
 
-## 2. ANÁLISIS DE HOY (27/04/2026)
+**Análisis Cuantitativo para los Partidos de Hoy (01/05/2026):**
 
-Para el análisis de hoy, primero necesito identificar los partidos que se juegan, ya que la lista proporcionada es de "Últimos 5 de X" y no emparejamientos directos para el 27/04/2026.
+Procederé a calcular el xG (Expected Goals) utilizando un enfoque basado en la distribución de Poisson y Sabermetrics. Primero, estableceré los promedios de goles de la liga. Dado que tenemos partidos de Premier League, La Liga y Serie A, usaré promedios generales para cada liga de los datos proporcionados.
 
-Asumiendo que los equipos listados en la sección "ANÁLISIS DE HOY" son los que tienen partidos programados para hoy, 27/04/2026, buscaré los enfrentamientos.
+**Metodología para xG (Sabermetrics/Poisson):**
 
-### Búsqueda de partidos para el 27/04/2026:
-
-The search results for April 27, 2026, indicate the following matches involving the teams from the "ANÁLISIS DE HOY" section:
-
-*   **La Liga:**
-    *   Espanyol vs Levante
-*   **Premier League:**
-    *   Manchester United vs Brentford
-*   **Serie A:**
-    *   Cagliari vs Atalanta (Note: Atalanta is not in the provided list of "Últimos 5 de X" for today, but Cagliari is. I will proceed with this match as identified by the search results).
-    *   Lazio vs Udinese
-    *   Milan vs Juventus (Note: The search results mention this as a Sunday, April 26th match, or a future match in the 2025/2026 season. I will assume it's a match for today as per the user's intent to analyze "Últimos 5 de Milan" and "Últimos 5 de Juventus" on April 27th, despite some search results pointing to April 26th or suggesting a different date within April. For the purpose of this analysis, I will treat Milan vs Juventus as a match for April 27, 2026, as per the explicit inclusion of both teams in "ANÁLISIS DE HOY" and the date context of the query. Some sources list it for April 26th, but other general fixtures list April 27th as a matchday for Serie A. Given the instruction to analyze teams listed as "playing today," and both being listed, I'll proceed with this matchup.)
-
-*   **Bundesliga:**
-    *   No direct matches for April 27, 2026, were found for Dortmund, Freiburg, Bayern Munich, Mainz, Hoffenheim, Hamburg, Stuttgart, Werder Bremen, Leverkusen, FC Koln, RB Leipzig, or Union Berlin. The Bundesliga fixtures for 2026-2027 are released in late June or early July, and the 2025-2026 season would likely have concluded by April 27th or have different scheduling. Some results mention "Bundesliga Women" for April 27, 2026, but not the men's league. Therefore, I will not analyze any Bundesliga matches for today based on the provided team list and search results for April 27, 2026.
-
-### Partidos a analizar para hoy, 27/04/2026:
-
-1.  **La Liga:** Espanyol vs Levante
-2.  **Premier League:** Manchester United vs Brentford
-3.  **Serie A:** Cagliari vs Atalanta
-4.  **Serie A:** Lazio vs Udinese
-5.  **Serie A:** Milan vs Juventus
-
-### Recopilación de Noticias en Vivo (Alineaciones, Lesiones)
-
-Para cada uno de los partidos identificados, buscaré noticias y alineaciones.
-
-### Resumen de Noticias y Alineaciones (27/04/2026):
-
-*   **Espanyol vs Levante (La Liga):**
-    *   **Espanyol:** Javi Puado (lesión de ligamento cruzado anterior, regresa en septiembre), Fernando Calero (duda por molestias). Posible alineación: Dmitrovic; Omar, Calero/Riedel, Cabrera, Romero; Urko, Lozano; Dolan, Expósito, Terrats/Ngonge; Kike García.
-    *   **Levante:** Iván Romero (sancionado por acumulación de tarjetas), Kareem Tunde (lesión muscular, 2 semanas de baja). Posible alineación: Caprile; Zappa, Vezo, Pier, Carlos Romero; M. Martinez, Pepelu; Cantero, Bardi, De Frutos; Roger. (No se encontró una alineación probable clara para Levante en las búsquedas, se basa en jugadores mencionados).
-
-*   **Manchester United vs Brentford (Premier League):**
-    *   **Manchester United:** Matthijs de Ligt (espalda, ausente desde noviembre), Lisandro Martínez (cumple el segundo de tres partidos de sanción), Patrick Dorgu (lesión muscular, progresando en recuperación), Leny Yoro (duda por golpe en entrenamiento). Posible alineación: Lammens; Dalot, Heaven, Maguire, Shaw; Mainoo, Casemiro; Amad, Fernandes, Cunha; Mbeumo.
-    *   **Brentford:** Fabio Carvalho (rodilla), Antoni Milambo (rodilla), Vitaly Janelt (tobillo), Rico Henry (muslo), Joshua DaSilva (rodilla), Jordan Henderson (no especificado), Kaye Furo (ingle) - todos fuera. Posible alineación: Kelleher; Kayode, Van den Berg, Collins, Lewis-Potter; Jensen, Yarmolyuk; Ouattara, Damsgaard, Schade; Thiago.
-
-*   **Cagliari vs Atalanta (Serie A):**
-    *   **Cagliari:** Se esperan las alineaciones, pero se mencionan como posibles titulares: Caprile; Palestra, Obert, Juan Rodríguez, Mina, Zé Pedro; Adopo, Sulemana; Esposito, Kiliçsoy, Gaetano.
-    *   **Atalanta:** Ademola Lookman (duda), Daniel Maldini (duda), Sead Kolasinac (duda), Odilon Kossounou (fuera), Giorgio Scalvini (fuera), Gianluca Scamacca (fuera). Posible alineación: Carnesecchi; Zappacosta, Zalewski, Kolasinac, Djimsiti, Scalvini; De Roon, Éderson; Scamacca, De Ketelaere, Raspadori.
-
-*   **Lazio vs Udinese (Serie A):**
-    *   **Lazio:** Gila (baja), Taty Castellanos (lesionado), Elseid Hysaj (duda). Posible alineación: Motta; Lazzari, Nuno Tavares, Cataldi, Romagnoli, Provstgaard; Basic, Taylor; Noslin, Isaksen, Zaccagni.
-    *   **Udinese:** Karlstrom (suspendido). Posible alineación: Okoye; Ehizibue, Kamara, Solet, Kabasele, Mlacic; Piotrowski, Ekkelenkamp; Atta, Zaniolo, Gueye.
-
-*   **Milan vs Juventus (Serie A):**
-    *   **Milan:** Luka Modrić (salió de cambio en un partido reciente por lesión). Posible alineación: Maignan; Tomori, Gabbia, Pavlović; Saelemaekers, Fofana, Modrić/Adli, Rabiot, Bartesaghi; Pulisic, Leao. (Notar que Modric es mencionado como lesionado pero también en la alineación probable, lo que indica incertidumbre).
-    *   **Juventus:** Se mencionan como posibles titulares: Szczesny; Danilo, Bremer, Alex Sandro; Cambiaso, Rabiot, Locatelli, Miretti, Kostić; Vlahović, Chiesa. (No se encontraron lesiones o suspensiones específicas en las búsquedas rápidas para el partido de hoy).
-
-### Aplicación de la Distribución de Poisson y Sabermetrics (xG)
-
-Dado que no se dispone de datos de xG reales para los partidos pasados, utilizaremos los goles a favor (FTHG) y en contra (FTAG) de los últimos 5 partidos como una aproximación para calcular las fuerzas ofensivas y defensivas de cada equipo. Luego, usaremos estas métricas para estimar los goles esperados (xG efectivo) para los partidos de hoy y aplicar la distribución de Poisson.
-
-**Metodología:**
-
-1.  **Goles Promedio:** Calcular los goles promedio anotados y recibidos por partido para cada equipo en los últimos 5 encuentros.
-2.  **Fuerza Ofensiva (FO):** (Goles Promedio Anotados del Equipo) / (Goles Promedio Anotados de la Liga).
-3.  **Fuerza Defensiva (FD):** (Goles Promedio Recibidos del Equipo) / (Goles Promedio Recibidos de la Liga).
-4.  **Goles Esperados (λ):**
-    *   λ(Equipo Local) = FO(Equipo Local) \* FD(Equipo Visitante) \* (Goles Promedio Anotados por Local en la Liga)
-    *   λ(Equipo Visitante) = FO(Equipo Visitante) \* FD(Equipo Local) \* (Goles Promedio Anotados por Visitante en la Liga)
-5.  **Distribución de Poisson:** Usar λ para calcular la probabilidad de cada resultado (0-0, 1-0, 0-1, etc.) hasta un cierto número de goles (ej. 4-4).
-6.  **Probabilidades de Victoria/Empate:** Sumar las probabilidades de todos los marcadores que resultan en victoria local, empate o victoria visitante.
-
-**Limitaciones:** Los datos de los "últimos 5 partidos" son muy limitados y corresponden a diferentes temporadas (2024, 2026), lo que afecta la precisión de la "fuerza de la liga" y la "forma actual". La ausencia de datos de xG reales es una limitación importante. Asumiré un promedio de liga general para cada liga, aunque esto es una simplificación.
-
-**Cálculos (ejemplo para un partido):**
-
-Primero, necesito calcular los promedios de goles para cada liga de los datos proporcionados para el "ANÁLISIS DE HOY".
-
-**Cálculo de Promedios de Liga (Basado en los últimos 5 partidos de los equipos listados para hoy):**
-
-*   **La Liga (Levante):**
-    *   Goles a favor: 1+1+4+0+1 = 7
-    *   Goles en contra: 1+1+2+2+0 = 6
-    *   Partidos: 5 (2 local, 3 visitante)
-    *   Goles por partido (Levante): 7/5 = 1.4
-    *   Goles en contra por partido (Levante): 6/5 = 1.2
-    *   *Nota: Solo tengo datos de Levante para La Liga para hoy. Esto no es suficiente para un promedio de liga robusto. Haré una estimación global para La Liga para continuar.*
-
-*   **Premier League (Man Utd, Brentford):**
-    *   Man Utd Goles a favor: 1+3+2+1+0 = 7
-    *   Man Utd Goles en contra: 2+1+2+2+1 = 8
-    *   Brentford Goles a favor: 0+2+0+2+0 = 4
-    *   Brentford Goles en contra: 0+2+0+2+0 = 4
-    *   Total goles anotados (combinado): 7+4 = 11
-    *   Total goles recibidos (combinado): 8+4 = 12
-    *   Total partidos: 10
-    *   Promedio de goles por partido (Premier League, de esta muestra): (11+12)/10 = 2.3
-
-*   **Serie A (Lazio, Udinese, Milan, Juventus, Cagliari):**
-    *   Lazio Goles a favor: 1+2+2+1+1 = 7
-    *   Lazio Goles en contra: 0+2+0+1+1 = 4
-    *   Udinese Goles a favor: 1+1+2+1+1 = 6
-    *   Udinese Goles en contra: 1+1+0+1+0 = 3
-    *   Milan Goles a favor: 0+3+5+3+3 = 14
-    *   Milan Goles en contra: 0+3+1+1+3 = 8
-    *   Juventus Goles a favor: 0+1+1+3+2 = 7
-    *   Juventus Goles en contra: 0+1+1+3+0 = 5
-    *   Cagliari Goles a favor: 0+1+1+2+2 = 6
-    *   Cagliari Goles en contra: 3+1+5+0+3 = 12
-    *   Total goles anotados (combinado): 7+6+14+7+6 = 40
-    *   Total goles recibidos (combinado): 4+3+8+5+12 = 32
-    *   Total partidos: 25
-    *   Promedio de goles por partido (Serie A, de esta muestra): (40+32)/25 = 2.88
-
-**Estimaciones de Promedio de Goles por Liga (simplificado, debido a datos limitados):**
-*   **La Liga:** Asumo un promedio de 2.5 goles por partido. Promedio local 1.4, Promedio visitante 1.1.
-*   **Premier League:** Promedio 2.3 goles por partido (de la muestra). Promedio local 1.3, Promedio visitante 1.0.
-*   **Serie A:** Promedio 2.88 goles por partido (de la muestra). Promedio local 1.6, Promedio visitante 1.28.
-
-Procedo con los cálculos para cada partido:
+1.  **Promedios de Goles de la Liga:** Calcular el promedio de goles por partido para equipos locales y visitantes en cada liga basándose en los datos históricos proporcionados para esa liga (aunque con las limitaciones de las fechas).
+2.  **Fuerza de Ataque (Attack Strength - AS):** (Promedio de Goles del Equipo Local / Promedio de Goles de la Liga del Equipo Local) para partidos de casa. (Promedio de Goles del Equipo Visitante / Promedio de Goles de la Liga del Equipo Visitante) para partidos fuera.
+3.  **Fuerza de Defensa (Defense Strength - DS):** (Promedio de Goles Recibidos del Equipo Local / Promedio de Goles de la Liga del Equipo Visitante) para partidos de casa. (Promedio de Goles Recibidos del Equipo Visitante / Promedio de Goles de la Liga del Equipo Local) para partidos fuera.
+4.  **xG (Goles Esperados):**
+    *   `xG_Local = AS_Local * DS_Visitante * Promedio_Goles_Casa_Liga`
+    *   `xG_Visitante = AS_Visitante * DS_Local * Promedio_Goles_Fuera_Liga`
+5.  **Distribución de Poisson:** Usar los valores de xG para calcular la probabilidad de diferentes resultados (0-0, 1-0, 0-1, 1-1, etc.).
+6.  **Probabilidades de Resultado Final:** Sumar las probabilidades de los marcadores para obtener la probabilidad de victoria local, empate y victoria visitante.
 
 ---
 
-### **Partido 1: Espanyol vs Levante (La Liga)**
+**Datos Históricos Relevantes para Hoy:**
 
-**Rendimiento reciente (últimos 5 partidos):**
-*   **Espanyol:**
-    *   Goles a favor: (no tenemos datos de Espanyol, solo Levante en "ANÁLISIS DE HOY". Usaré su promedio general de La Liga y la información de la búsqueda que dice que el Espanyol es 12º y el Levante 19º). Buscaré datos históricos para Espanyol de la auditoría.
-    *   *Corrección:* No hay datos de Espanyol en la sección "Últimos 5 de X" en la sección de auditoría para La Liga 2026. Solo se proporciona Levante. Esto es un problema para la consistencia de los datos. Para poder hacer un análisis, usaré los datos de Levante que se nos proporcionaron para hoy, y buscaré datos recientes de Espanyol.
+**Premier League:**
 
-    *   **Espanyol (de noticias, últimos 5 partidos):** 2 empates y 3 derrotas, sin ganar desde el 13 de diciembre de 2025. Esto indica una baja fuerza ofensiva y defensiva. No hay goles explícitos, pero el contexto sugiere pocos goles a favor y algunos en contra. Asumiré un promedio de 0.8 goles a favor y 1.6 goles en contra.
-    *   **Levante (del historial provisto para hoy):** Goles a favor = 7, Goles en contra = 6 (en 5 partidos). Promedio GF = 1.4, Promedio GC = 1.2.
-        *   Últimos 5 del Levante (en la sección "ANÁLISIS DE HOY"):
-            *   07/03/2026 Levante vs Girona: 1-1
-            *   16/03/2026 Vallecano vs Levante: 1-1
-            *   21/03/2026 Levante vs Oviedo: 4-2
-            *   04/04/2026 Sociedad vs Levante: 2-0
-            *   13/04/2026 Levante vs Getafe: 1-0
+*   **Leeds (Casa):** 3 de Marzo de 2026 (Leeds 0-1 Sunderland), 21 de Marzo de 2026 (Leeds 0-0 Brentford), 18 de Abril de 2026 (Leeds 3-0 Wolves).
+    *   Goles a favor en casa: 0+0+3 = 3 (Promedio: 1.0)
+    *   Goles en contra en casa: 1+0+0 = 1 (Promedio: 0.33)
+*   **Burnley (Visita):** 3 de Marzo de 2026 (Everton 2-0 Burnley), 21 de Marzo de 2026 (Fulham 3-1 Burnley), 19 de Abril de 2026 (Nott'm Forest 4-1 Burnley).
+    *   Goles a favor fuera: 0+1+1 = 2 (Promedio: 0.67)
+    *   Goles en contra fuera: 2+3+4 = 9 (Promedio: 3.0)
 
-**Promedios de Goles (basados en los datos proporcionados):**
-*   **Espanyol (estimado):** GF=0.8, GC=1.6
-*   **Levante:** GF=1.4, GC=1.2
+**La Liga:**
 
-**Fuerza Ofensiva y Defensiva (La Liga - Promedio de Liga: 2.5 goles/partido, Local 1.4, Visitante 1.1):**
-*   FO(Espanyol) = 0.8 / 1.25 (promedio general) = 0.64
-*   FD(Espanyol) = 1.6 / 1.25 (promedio general) = 1.28
-*   FO(Levante) = 1.4 / 1.25 = 1.12
-*   FD(Levante) = 1.2 / 1.25 = 0.96
+*   **Girona (Casa):** 4 de Mayo de 2024 (Girona 4-2 Barcelona), 14 de Mayo de 2024 (Girona 0-1 Villarreal), 24 de Mayo de 2024 (Girona 7-0 Granada).
+    *   Goles a favor en casa: 4+0+7 = 11 (Promedio: 3.67)
+    *   Goles en contra en casa: 2+1+0 = 3 (Promedio: 1.0)
+*   **Mallorca (Visita):** 4 de Mayo de 2024 (Mallorca 0-1 Ath Madrid), 14 de Mayo de 2024 (Osasuna 1-1 Mallorca), 26 de Mayo de 2024 (Getafe 1-2 Mallorca).
+    *   Goles a favor fuera: 0+1+2 = 3 (Promedio: 1.0)
+    *   Goles en contra fuera: 1+1+1 = 3 (Promedio: 1.0)
 
-**Goles Esperados (λ):**
-*   λ(Espanyol - Local) = 0.64 \* 0.96 \* 1.4 = 0.86
-*   λ(Levante - Visitante) = 1.12 \* 1.28 \* 1.1 = 1.58
+**Serie A:**
 
-**Pronóstico con Distribución de Poisson (ejemplo):**
-*   P(Espanyol 0 goles) = e^(-0.86) \* (0.86^0 / 0!) = 0.423
-*   P(Espanyol 1 gol) = e^(-0.86) \* (0.86^1 / 1!) = 0.364
-*   P(Levante 0 goles) = e^(-1.58) \* (1.58^0 / 0!) = 0.206
-*   P(Levante 1 gol) = e^(-1.58) \* (1.58^1 / 1!) = 0.325
-
-**Resultados más probables:**
-*   Espanyol 0 - Levante 1 (0.423 * 0.325 = 0.137)
-*   Espanyol 1 - Levante 1 (0.364 * 0.325 = 0.118)
-*   Espanyol 0 - Levante 2 (0.423 * e^(-1.58) * (1.58^2 / 2!) = 0.423 * 0.257 = 0.108)
-
-**Probabilidades (calculadas sumando los escenarios):**
-*   Victoria Espanyol: ~25%
-*   Empate: ~30%
-*   Victoria Levante: ~45%
-
-**Recomendación CLV:**
-Dado el bajo rendimiento del Espanyol y las bajas importantes del Levante, pero con el Levante mostrando mejor forma reciente, la **Victoria de Levante o Empate (Doble Oportunidad X2)** parece la opción de mayor valor. Considerando las bajas del Levante (Romero sancionado, Tunde lesionado), esto podría equilibrar la balanza. Sin embargo, la ventaja local del Espanyol, a pesar de su mala racha, no debe ser subestimada.
-
-**Tamaño de Inversión (Criterio de Kelly):**
-Sin cuotas de apuestas, no puedo aplicar el Criterio de Kelly directamente. Si asumimos una cuota justa de 2.22 para la victoria del Levante (1/0.45) y una cuota de 3.33 para el empate (1/0.30), una apuesta por "Victoria Levante o Empate" tendría una cuota combinada.
-Para una probabilidad del 45% de victoria de Levante (p=0.45) y una cuota asumida de 2.2 (b=1.22), y un 30% de empate (p=0.30), una apuesta de doble oportunidad X2 con cuota asumida de 1.5.
-Si f = (bp - q) / b, donde p es la probabilidad de ganar, q es la probabilidad de perder (1-p), y b es la cuota neta.
-Para (X2): p = 0.45 + 0.30 = 0.75. Si la cuota fuera 1.5 (b=0.5). f = (0.5 * 0.75 - 0.25) / 0.5 = (0.375 - 0.25) / 0.5 = 0.125 / 0.5 = 0.25.
-Esto sugeriría apostar un **25% de la banca** en la doble oportunidad X2 (Victoria Levante o Empate). Sin embargo, esto es una **estimación teórica** sin cuotas reales.
+*   **Pisa (Casa):** 15 de Marzo de 2026 (Pisa 3-1 Cagliari), 5 de Abril de 2026 (Pisa 0-1 Torino), 19 de Abril de 2026 (Pisa 1-2 Genoa).
+    *   Goles a favor en casa: 3+0+1 = 4 (Promedio: 1.33)
+    *   Goles en contra en casa: 1+1+2 = 4 (Promedio: 1.33)
+*   **Lecce (Visita):** 27 de Abril de 2024 (Lecce 1-1 Monza), 5 de Mayo de 2024 (Cagliari 1-1 Lecce), 26 de Mayo de 2024 (Napoli 0-0 Lecce).
+    *   Goles a favor fuera: 1+1+0 = 2 (Promedio: 0.67)
+    *   Goles en contra fuera: 1+1+0 = 2 (Promedio: 0.67)
 
 ---
 
-### **Partido 2: Manchester United vs Brentford (Premier League)**
+**Cálculo de Promedios de Goles de la Liga (Basado en el historial proporcionado):**
 
-**Rendimiento reciente (últimos 5 partidos):**
-*   **Manchester United:** GF=7, GC=8. Promedio GF=1.4, Promedio GC=1.6
-    *   04/03/2026 Newcastle vs Man United: 2-1
-    *   15/03/2026 Man United vs Aston Villa: 3-1
-    *   20/03/2026 Bournemouth vs Man United: 2-2
-    *   13/04/2026 Man United vs Leeds: 1-2
-    *   18/04/2026 Chelsea vs Man United: 0-1
-*   **Brentford:** GF=4, GC=4. Promedio GF=0.8, Promedio GC=0.8
-    *   03/03/2026 Bournemouth vs Brentford: 0-0
-    *   16/03/2026 Brentford vs Wolves: 2-2
-    *   21/03/2026 Leeds vs Brentford: 0-0
-    *   11/04/2026 Brentford vs Everton: 2-2
-    *   18/04/2026 Brentford vs Fulham: 0-0
+*   **Premier League (total de 15 partidos en 2026 proporcionados para varios equipos):**
+    *   Total Goles Casa: 1+1+4+2+1+2+1+2+0+3+2+1+0 = 20
+    *   Total Goles Fuera: 1+1+2+0+0+1+0+2+1+1+0+1+0 = 10
+    *   Partidos en casa: 8 (Levante, Man United, Brentford, Leeds)
+    *   Partidos fuera: 7 (Levante, Man United, Brentford, Leeds)
+    *   Promedio Goles Casa Premier League (total de goles del equipo local en partidos de Premier League / número de partidos): (1+3+2+1+1+3+2+0)/8 = 1.625
+    *   Promedio Goles Fuera Premier League (total de goles del equipo visitante en partidos de Premier League / número de partidos): (1+1+2+0+1+1+0+2)/8 = 1.0
+    *   Nota: Para los partidos donde el equipo es visitante, FTHG es el gol del local y FTAG es el gol del visitante. Ajustaré para calcular los promedios de la liga.
+        *   Goles anotados por equipos locales en PL (de los 2026 data): 1 (Levante-Girona), 4 (Levante-Oviedo), 1 (Levante-Getafe), 3 (Man Utd-Aston Villa), 1 (Man Utd-Leeds), 2 (Brentford-Wolves), 2 (Brentford-Everton), 0 (Brentford-Fulham), 0 (Leeds-Sunderland), 0 (Leeds-Brentford), 3 (Leeds-Wolves) = 1+4+1+3+1+2+2+0+0+0+3 = 17
+        *   Goles anotados por equipos visitantes en PL (de los 2026 data): 1 (Levante-Girona), 2 (Levante-Oviedo), 0 (Levante-Getafe), 1 (Man Utd-Aston Villa), 2 (Man Utd-Leeds), 2 (Brentford-Wolves), 2 (Brentford-Everton), 0 (Brentford-Fulham), 1 (Leeds-Sunderland), 0 (Leeds-Brentford), 0 (Leeds-Wolves) = 1+2+0+1+2+2+2+0+1+0+0 = 11
+        *   Partidos PL en casa (Leeds, Man Utd, Brentford): 3+2+3 = 8
+        *   Partidos PL fuera (Leeds, Man Utd, Brentford): 2+3+2 = 7
+        *   Promedio de goles marcados por el equipo local en PL (todos los partidos): (1+4+1+3+1+2+2+0+0+0+3 + 1+1+2+1+2+2+2+0+1+0+0 (goles de local de otros equipos en partidos de visitantes)) / 15 partidos = 28/15 = 1.87
+        *   Promedio de goles marcados por el equipo visitante en PL (todos los partidos): (1+1+2+0+0+1+0+2+1+1+0 (goles de visitante de otros equipos en partidos de local)) / 15 partidos = 10/15 = 0.67
+    *   **Corrección:** Simplificaré el promedio de la liga utilizando los *total goals* de los partidos donde los equipos listados fueron locales o visitantes.
+    *   Partidos PL en los datos 2026: 15 partidos.
+        *   Total Goles (FTHG+FTAG): (1+1)+(1+1)+(4+2)+(2+0)+(1+0) + (2+1)+(3+1)+(2+2)+(1+2)+(0+1) + (0+0)+(2+2)+(0+0)+(2+2)+(0+0) = 4+2+6+2+1 + 3+4+4+3+1 + 0+4+0+4+0 = 38 goles en 15 partidos.
+        *   Promedio Goles por Partido PL = 38 / 15 = 2.53
+        *   Promedio Goles Casa PL = (Goles de equipos locales) / (Número de partidos)
+        *   Promedio Goles Visitante PL = (Goles de equipos visitantes) / (Número de partidos)
+        *   De los datos de 2026 para PL:
+            *   Goles anotados por equipos HOME: 1 (Lev-Gir), 4 (Lev-Ovi), 1 (Lev-Get), 3 (ManU-AstV), 1 (ManU-Lee), 2 (Bre-Wol), 2 (Bre-Eve), 0 (Bre-Ful), 0 (Lee-Sun), 0 (Lee-Bre), 3 (Lee-Wol) = 17
+            *   Goles concedidos por equipos HOME (que serían FTAG de sus partidos como local): 1, 2, 0, 1, 2, 2, 2, 0, 1, 0, 0 = 11
+            *   Goles anotados por equipos AWAY: 1 (Val-Lev), 1 (New-ManU), 2 (Bou-ManU), 0 (Che-ManU), 0 (Bou-Bre), 0 (Lee-Bre), 1 (Ful-Bur), 4 (Not-Bur), 2 (ManU-Lee) = 1+1+2+0+0+0+1+4+2 = 11
+            *   Goles concedidos por equipos AWAY (que serían FTHG de sus partidos como visitante): 1, 2, 1, 0, 0, 0, 3, 2, 1 = 1+2+1+0+0+0+3+2+1 = 10
+            *   Total partidos de liga Premier analizados: 23 partidos (5x4 de Levante, Man United, Brentford, Leeds, y 3 de Burnley).
 
-**Fuerza Ofensiva y Defensiva (Premier League - Promedio de Liga: 2.3 goles/partido, Local 1.3, Visitante 1.0):**
-*   FO(Man Utd) = 1.4 / 1.15 = 1.22
-*   FD(Man Utd) = 1.6 / 1.15 = 1.39
-*   FO(Brentford) = 0.8 / 1.15 = 0.70
-*   FD(Brentford) = 0.8 / 1.15 = 0.70
+        *   **Recalculando promedios de la Liga de manera más consistente, usando *todos* los FTHG y FTAG de los equipos de esa liga en el historial proporcionado:**
+            *   **Premier League (equipos 2026):**
+                *   Total Goles FTHG (de todos los partidos donde un equipo de la Premier League fue Home): 1+4+1 + 3+1 + 2+2+0 + 0+0+3 = 17 goles. (11 partidos en casa)
+                *   Total Goles FTAG (de todos los partidos donde un equipo de la Premier League fue Home): 1+2+0 + 1+2 + 2+2+0 + 1+0+0 = 11 goles. (11 partidos en casa)
+                *   Total Goles FTHG (de todos los partidos donde un equipo de la Premier League fue Away): 1+1 + 2+0 + 0+0+3+4 + 0+0+1+3+2 = 17 goles. (12 partidos fuera)
+                *   Total Goles FTAG (de todos los partidos donde un equipo de la Premier League fue Away): 1+1 + 2+1 + 0+0+1+1 + 0+0+1+1+1 = 10 goles. (12 partidos fuera)
 
-**Goles Esperados (λ):**
-*   λ(Man Utd - Local) = 1.22 \* 0.70 \* 1.3 = 1.11
-*   λ(Brentford - Visitante) = 0.70 \* 1.39 \* 1.0 = 0.97
+                *   *Esto es complicado porque las tablas son solo los "últimos 5" de cada equipo, no el universo de partidos de la liga. Asumiré que los promedios de goles para la liga se basan en los resultados provistos para los equipos de esa liga.*
 
-**Pronóstico con Distribución de Poisson (ejemplo):**
-*   P(Man Utd 1 gol) = e^(-1.11) \* (1.11^1 / 1!) = 0.36
-*   P(Man Utd 2 goles) = e^(-1.11) \* (1.11^2 / 2!) = 0.20
-*   P(Brentford 0 goles) = e^(-0.97) \* (0.97^0 / 0!) = 0.37
-*   P(Brentford 1 gol) = e^(-0.97) \* (0.97^1 / 1!) = 0.36
+                *   **Promedio Goles Premier League (basado en todos los 2026 PL games provided):**
+                    *   Total Goles Home Team (todos los partidos): (1+4+1) + (1+1) + (3+1) + (2+2+0) + (0+0+3) + (2+0) + (3+1) + (4+1) = 28 goles marcados por equipos HOME.
+                    *   Total Goles Away Team (todos los partidos): (1+2+0) + (1+2) + (2+2+0) + (1+0+0) + (0+0) + (1+1) + (1+1) = 17 goles marcados por equipos AWAY.
+                    *   Total partidos como LOCAL: 3 (Levante) + 2 (Man United) + 3 (Brentford) + 3 (Leeds) = 11 partidos.
+                    *   Total partidos como VISITANTE: 2 (Levante) + 3 (Man United) + 2 (Brentford) + 2 (Leeds) + 3 (Burnley) = 12 partidos.
+                    *   Promedio Goles por Partido Total = (17+11 + 17+10) / (11+12) = 55 / 23 = 2.39
+                    *   Promedio Goles Home = (Goles FTHG de partidos de casa + Goles FTHG de partidos de fuera) / 23 = (17+10) / 23 = 1.17
+                    *   Promedio Goles Away = (Goles FTAG de partidos de casa + Goles FTAG de partidos de fuera) / 23 = (11+17) / 23 = 1.22
+                    *   Esto no tiene sentido. Debo calcular: Promedio de goles *anotados por el equipo local* en la liga, y promedio de goles *anotados por el equipo visitante* en la liga.
 
-**Resultados más probables:**
-*   Man Utd 1 - Brentford 0 (0.36 * 0.37 = 0.133)
-*   Man Utd 1 - Brentford 1 (0.36 * 0.36 = 0.130)
-*   Man Utd 2 - Brentford 0 (0.20 * 0.37 = 0.074)
+                    *   **Promedios de Goles por la Liga (todos los partidos dados en el input para cada liga):**
+                        *   **Premier League (Total 23 partidos):**
+                            *   Goles anotados por equipos locales (FTHG de partidos HOME, FTHG de partidos AWAY):
+                                *   Levante (H): 1, 4, 1. Levante (A): 1, 2
+                                *   Man United (H): 3, 1. Man United (A): 2, 0, 0
+                                *   Brentford (H): 2, 2, 0. Brentford (A): 0, 0
+                                *   Leeds (H): 0, 0, 3. Leeds (A): 1, 1
+                                *   Burnley (A): 2, 3, 4
+                                *   Total FTHG: 1+4+1+1+2 + 3+1+2+0+0 + 2+2+0+0+0 + 0+0+3+1+1 + 2+3+4 = 39 goles.
+                            *   Goles anotados por equipos visitantes (FTAG de partidos HOME, FTAG de partidos AWAY):
+                                *   Levante (H): 1, 2, 0. Levante (A): 1, 1
+                                *   Man United (H): 1, 2. Man United (A): 1, 2, 1
+                                *   Brentford (H): 2, 2, 0. Brentford (A): 0, 0
+                                *   Leeds (H): 1, 0, 0. Leeds (A): 2, 0
+                                *   Burnley (A): 0, 1, 1
+                                *   Total FTAG: 1+2+0+1+1 + 1+2+1+2+1 + 2+2+0+0+0 + 1+0+0+2+0 + 0+1+1 = 28 goles.
+                            *   Promedio Goles Local Premier League = 39 / 23 = 1.70
+                            *   Promedio Goles Visitante Premier League = 28 / 23 = 1.22
 
-**Probabilidades (calculadas sumando los escenarios):**
-*   Victoria Man Utd: ~45%
-*   Empate: ~30%
-*   Victoria Brentford: ~25%
+                        *   **La Liga (Total 18 partidos):** (Levante 5, Girona 5, Mallorca 5, con datos de 2024 para Girona/Mallorca y 2026 para Levante. Usaré los de 2024/2026.)
+                            *   Total FTHG: 1+1+4+2+1 + 4+2+0+1+1 + 0+1+1+1+1 = 20 goles.
+                            *   Total FTAG: 1+1+2+0+0 + 2+2+1+3+0 + 1+0+1+2+2 = 18 goles.
+                            *   Promedio Goles Local La Liga = 20 / 18 = 1.11
+                            *   Promedio Goles Visitante La Liga = 18 / 18 = 1.00
 
-**Recomendación CLV:**
-Manchester United, a pesar de algunas bajas defensivas (Martínez, De Ligt), juega en casa y ha mostrado una capacidad ofensiva superior en los últimos partidos. Brentford tiende a empates y pocos goles. La **Victoria del Manchester United** es la opción de mayor valor.
-
-**Tamaño de Inversión (Criterio de Kelly):**
-Si asumimos una cuota de 2.22 para la victoria del Man Utd (1/0.45). f = (1.22 * 0.45 - 0.55) / 1.22 = (0.549 - 0.55) / 1.22 = -0.001 / 1.22. Esto indica que las cuotas no tienen valor o hay un error en la suposición.
-Si la cuota de la victoria local fuese, por ejemplo, 2.0 (b=1), y p=0.45, q=0.55. f = (1 \* 0.45 - 0.55) / 1 = -0.10. Esto sugiere que no se debería apostar o que la apuesta tiene valor negativo.
-
-Reevaluando la situación: Las bajas de Man Utd en defensa (Martínez y De Ligt) son significativas. Brentford es un equipo "in-form" y ha logrado varios empates a cero. Esto sugiere un partido más cerrado de lo que mis promedios iniciales podrían indicar, y las "alineaciones" tienen un peso importante. Teniendo en cuenta las lesiones y la solidez defensiva del Brentford, la probabilidad de un empate o pocos goles es alta.
-
-**CLV revisado:** **Empate o Menos de 2.5 Goles**. El Manchester United es favorito, pero Brentford es un rival complicado.
-
-**Tamaño de Inversión (Revisado para "Menos de 2.5 goles"):**
-Si la probabilidad de Menos de 2.5 Goles es alta (ej. 55%), y asumimos una cuota de 1.9 (b=0.9). f = (0.9 \* 0.55 - 0.45) / 0.9 = (0.495 - 0.45) / 0.9 = 0.045 / 0.9 = 0.05.
-Esto sugiere apostar un **5% de la banca** en "Menos de 2.5 Goles".
-
----
-
-### **Partido 3: Cagliari vs Atalanta (Serie A)**
-
-**Rendimiento reciente (últimos 5 partidos):**
-*   **Cagliari:** GF=6, GC=12. Promedio GF=1.2, Promedio GC=2.4
-    *   29/04/2024 Genoa vs Cagliari: 3-0
-    *   05/05/2024 Cagliari vs Lecce: 1-1
-    *   11/05/2024 Milan vs Cagliari: 5-1
-    *   19/05/2024 Sassuolo vs Cagliari: 0-2
-    *   23/05/2024 Cagliari vs Fiorentina: 2-3
-*   **Atalanta:** (No tengo datos de Atalanta en "Últimos 5 de X" en la sección de auditoría ni para hoy. Solo tengo datos de sus lesiones. Esto es una limitación. Utilizaré su fuerza basada en el contexto de la liga y las bajas).
-    *   *Corrección:* Atalanta es un equipo de "ataque de ataque" y busca mantener su posición en puestos europeos. Se asume una fuerza ofensiva alta y una defensiva media. Con varias bajas (Lookman, Maldini, Kolasinac, Kossounou, Scalvini, Scamacca), su rendimiento podría verse afectado. Asumiré un GF promedio de 1.8 y GC promedio de 1.2 (antes de considerar las bajas pesadas).
-
-**Fuerza Ofensiva y Defensiva (Serie A - Promedio de Liga: 2.88 goles/partido, Local 1.6, Visitante 1.28):**
-*   FO(Cagliari) = 1.2 / 1.44 = 0.83
-*   FD(Cagliari) = 2.4 / 1.44 = 1.67
-*   FO(Atalanta - estimado pre-bajas) = 1.8 / 1.44 = 1.25
-*   FD(Atalanta - estimado pre-bajas) = 1.2 / 1.44 = 0.83
-
-**Considerando las bajas de Atalanta:** Reduciré su FO en un 20% y aumentaré su FD en un 10% por las múltiples ausencias importantes.
-*   FO(Atalanta - ajustado) = 1.25 \* 0.8 = 1.0
-*   FD(Atalanta - ajustado) = 0.83 \* 1.1 = 0.91
-
-**Goles Esperados (λ):**
-*   λ(Cagliari - Local) = 0.83 \* 0.91 \* 1.6 = 1.21
-*   λ(Atalanta - Visitante) = 1.0 \* 1.67 \* 1.28 = 2.14
-
-**Pronóstico con Distribución de Poisson (ejemplo):**
-*   P(Cagliari 1 gol) = e^(-1.21) \* (1.21^1 / 1!) = 0.36
-*   P(Cagliari 2 goles) = e^(-1.21) \* (1.21^2 / 2!) = 0.22
-*   P(Atalanta 1 gol) = e^(-2.14) \* (2.14^1 / 1!) = 0.26
-*   P(Atalanta 2 goles) = e^(-2.14) \* (2.14^2 / 2!) = 0.28
-*   P(Atalanta 3 goles) = e^(-2.14) \* (2.14^3 / 3!) = 0.20
-
-**Resultados más probables:**
-*   Cagliari 1 - Atalanta 2
-*   Cagliari 1 - Atalanta 1
-*   Cagliari 0 - Atalanta 2
-
-**Probabilidades (calculadas sumando los escenarios):**
-*   Victoria Cagliari: ~20%
-*   Empate: ~25%
-*   Victoria Atalanta: ~55%
-
-**Recomendación CLV:**
-A pesar de las bajas, Atalanta tiene una calidad superior y está luchando por Europa. Cagliari es un equipo "struggling". La **Victoria de Atalanta** es la opción de mayor valor.
-
-**Tamaño de Inversión (Criterio de Kelly):**
-Si asumimos una cuota de 1.82 para la victoria de Atalanta (1/0.55), b=0.82. f = (0.82 \* 0.55 - 0.45) / 0.82 = (0.451 - 0.45) / 0.82 = 0.001 / 0.82 = 0.0012.
-Esto sugiere una inversión muy pequeña, casi nula. Esto podría indicar que las cuotas ya reflejan esta probabilidad, o que mi ajuste por las lesiones no fue suficiente.
-
-Reevaluando: Las bajas de Atalanta son significativas, y Cagliari, aunque en dificultades, juega en casa. El "attacking prowess" de Atalanta podría verse mermado. Un empate no es improbable.
-**CLV revisado:** **Más de 2.5 Goles** (dada la naturaleza ofensiva de Atalanta y la defensiva vulnerable de Cagliari).
-
-**Tamaño de Inversión (Revisado para "Más de 2.5 Goles"):**
-Si la probabilidad de Más de 2.5 Goles es alta (ej. 60%), y asumimos una cuota de 1.6 (b=0.6). f = (0.6 \* 0.60 - 0.40) / 0.6 = (0.36 - 0.40) / 0.6 = -0.04 / 0.6. Esto indica valor negativo.
-
-La incertidumbre de las bajas y la falta de datos recientes de Atalanta hacen este pronóstico más difícil.
-**CLV Final:** Dada la situación, el pronóstico de mayor valor es la **Victoria de Atalanta** pero con una **inversión conservadora**. El "ataque de ataque" de Atalanta podría compensar las bajas.
+                        *   **Serie A (Total 21 partidos):** (Lazio 5, Udinese 5, Milan 5, Juventus 5, Cagliari 5, Pisa 5, Lecce 5. Usaré los de 2024/2026.)
+                            *   Total FTHG: 1+2+1+1+2+1+3+5+3 + 0+1+1+1+2+1 + 3+0+1 + 1+1+0 = 34 goles.
+                            *   Total FTAG: 0+2+0+1+1 + 1+1+2+1+1 + 0+3+1+3+3 + 0+1+1+3+0 + 1+0+2+0+0 = 29 goles.
+                            *   Promedio Goles Local Serie A = 34 / 21 = 1.62
+                            *   Promedio Goles Visitante Serie A = 29 / 21 = 1.38
 
 ---
 
-### **Partido 4: Lazio vs Udinese (Serie A)**
+Ahora, calcularemos las fuerzas de ataque y defensa y el xG para cada partido de hoy.
 
-**Rendimiento reciente (últimos 5 partidos):**
-*   **Lazio:** GF=7, GC=4. Promedio GF=1.4, Promedio GC=0.8
-    *   27/04/2024 Lazio vs Verona: 1-0
-    *   04/05/2024 Monza vs Lazio: 2-2
-    *   12/05/2024 Lazio vs Empoli: 2-0
-    *   19/05/2024 Inter vs Lazio: 1-1
-    *   26/05/2024 Lazio vs Sassuolo: 1-1
-*   **Udinese:** GF=6, GC=3. Promedio GF=1.2, Promedio GC=0.6
-    *   28/04/2024 Bologna vs Udinese: 1-1
-    *   06/05/2024 Udinese vs Napoli: 1-1
-    *   13/05/2024 Lecce vs Udinese: 0-2
-    *   19/05/2024 Udinese vs Empoli: 1-1
-    *   26/05/2024 Frosinone vs Udinese: 0-1
+**Partido 1: Leeds vs Burnley (Premier League)**
 
-**Bajas:**
-*   **Lazio:** Gila (baja), Taty Castellanos (lesionado), Elseid Hysaj (duda).
-*   **Udinese:** Karlstrom (suspendido).
+**Noticias en vivo / Alineaciones / Lesiones (01/05/2026):**
 
-**Fuerza Ofensiva y Defensiva (Serie A - Promedio de Liga: 2.88 goles/partido, Local 1.6, Visitante 1.28):**
-*   FO(Lazio) = 1.4 / 1.44 = 0.97
-*   FD(Lazio) = 0.8 / 1.44 = 0.56
-*   FO(Udinese) = 1.2 / 1.44 = 0.83
-*   FD(Udinese) = 0.6 / 1.44 = 0.42
+*   **Leeds:** En buena forma en liga (invicto en 5 partidos de PL antes de una derrota en FA Cup). Vienen de una derrota 1-0 en semifinales de FA Cup contra Chelsea. Sin Illan Gruev y Gudmundsson por lesión, sin suspensiones. Alineación probable: Darlow; Bijol, Struijk, Rodon; Okafor, Justin, Ampadu, Aaronson, Bogle; Tanaka; Calvert-Lewin. Dominic Calvert-Lewin ha marcado 11 goles en 31 partidos esta temporada.
+*   **Burnley:** Están en la 19ª posición y su descenso ya está confirmado. Han perdido 4 de sus últimos 5 partidos, incluyendo 4-1 contra Nottingham Forest y 0-2 contra Brighton. Scott Parker fue despedido y Michael Jackson es el entrenador interino. Tienen una lista de lesionados más significativa: Beyer, Tuanzebe, Cullen, Roberts, Amdouni, Mejbri. Alineación probable: Dubravka; Esteve, Humphreys, Ekdal, Walker; Laurent, Ward-Prowse, Hartman, Anthony; Tchaouna, Flemming. Zian Flemming ha marcado 9 goles.
 
-**Goles Esperados (λ):**
-*   λ(Lazio - Local) = 0.97 \* 0.42 \* 1.6 = 0.65
-*   λ(Udinese - Visitante) = 0.83 \* 0.56 \* 1.28 = 0.59
+**Cálculos Cuantitativos (Premier League):**
 
-**Pronóstico con Distribución de Poisson (ejemplo):**
-*   P(Lazio 0 goles) = e^(-0.65) \* (0.65^0 / 0!) = 0.522
-*   P(Lazio 1 gol) = e^(-0.65) \* (0.65^1 / 1!) = 0.340
-*   P(Udinese 0 goles) = e^(-0.59) \* (0.59^0 / 0!) = 0.554
-*   P(Udinese 1 gol) = e^(-0.59) \* (0.59^1 / 1!) = 0.327
+*   Promedio Goles Local PL = 1.70
+*   Promedio Goles Visitante PL = 1.22
 
-**Resultados más probables:**
-*   Lazio 0 - Udinese 0 (0.522 * 0.554 = 0.289)
-*   Lazio 1 - Udinese 0 (0.340 * 0.554 = 0.188)
-*   Lazio 0 - Udinese 1 (0.522 * 0.327 = 0.171)
+**Leeds (Local):**
 
-**Probabilidades (calculadas sumando los escenarios):**
-*   Victoria Lazio: ~35%
-*   Empate: ~40%
-*   Victoria Udinese: ~25%
+*   Goles a favor en casa (3 partidos): 3 (vs Wolves), 0 (vs Brentford), 0 (vs Sunderland) = Promedio 1.0
+*   Goles en contra en casa (3 partidos): 0 (vs Wolves), 0 (vs Brentford), 1 (vs Sunderland) = Promedio 0.33
+*   AS_Leeds = (1.0 / 1.70) = 0.59
+*   DS_Leeds = (0.33 / 1.22) = 0.27
 
-**Recomendación CLV:**
-Ambos equipos tienen una defensa sólida y una ofensiva más limitada, lo que sugiere un partido con pocos goles. El Udinese, a pesar de la baja de Karlstrom, tiene una buena racha defensiva. La Lazio juega en casa y busca puestos europeos. Un **Empate** es el resultado más probable, seguido de una victoria local por la mínima.
+**Burnley (Visitante):**
 
-**Tamaño de Inversión (Criterio de Kelly):**
-Si asumimos una cuota de 2.5 para el empate (1/0.40), b=1.5. f = (1.5 \* 0.40 - 0.60) / 1.5 = (0.60 - 0.60) / 1.5 = 0.
-Esto sugiere no apostar en el empate si la cuota es 2.5.
+*   Goles a favor fuera (3 partidos): 1 (vs Nott'm Forest), 1 (vs Fulham), 0 (vs Everton) = Promedio 0.67
+*   Goles en contra fuera (3 partidos): 4 (vs Nott'm Forest), 3 (vs Fulham), 2 (vs Everton) = Promedio 3.0
+*   AS_Burnley = (0.67 / 1.22) = 0.55
+*   DS_Burnley = (3.0 / 1.70) = 1.76
 
-**CLV Final:** **Menos de 2.5 Goles**. La probabilidad de un partido cerrado es muy alta.
+**xG Leeds vs Burnley:**
 
-**Tamaño de Inversión (Revisado para "Menos de 2.5 goles"):**
-Probabilidad de menos de 2.5 goles es alta (ej. 65%). Si la cuota es 1.7 (b=0.7). f = (0.7 \* 0.65 - 0.35) / 0.7 = (0.455 - 0.35) / 0.7 = 0.105 / 0.7 = 0.15.
-Esto sugiere apostar un **15% de la banca** en "Menos de 2.5 Goles".
+*   xG_Leeds = AS_Leeds * DS_Burnley * Promedio_Goles_Casa_PL = 0.59 * 1.76 * 1.70 = 1.76
+*   xG_Burnley = AS_Burnley * DS_Leeds * Promedio_Goles_Visitante_PL = 0.55 * 0.27 * 1.22 = 0.18
 
----
+**Distribución de Poisson (probabilidades de goles):**
 
-### **Partido 5: Milan vs Juventus (Serie A)**
+| Goles | P(Leeds) | P(Burnley) |
+| :---- | :------- | :--------- |
+| 0     | 0.179    | 0.835      |
+| 1     | 0.316    | 0.150      |
+| 2     | 0.279    | 0.014      |
+| 3     | 0.164    | 0.001      |
 
-**Rendimiento reciente (últimos 5 partidos):**
-*   **Milan:** GF=14, GC=8. Promedio GF=2.8, Promedio GC=1.6
-    *   27/04/2024 Juventus vs Milan: 0-0
-    *   05/05/2024 Milan vs Genoa: 3-3
-    *   11/05/2024 Milan vs Cagliari: 5-1
-    *   18/05/2024 Torino vs Milan: 3-1
-    *   25/05/2024 Milan vs Salernitana: 3-3
-*   **Juventus:** GF=7, GC=5. Promedio GF=1.4, Promedio GC=1.0
-    *   27/04/2024 Juventus vs Milan: 0-0
-    *   05/05/2024 Roma vs Juventus: 1-1
-    *   12/05/2024 Juventus vs Salernitana: 1-1
-    *   20/05/2024 Bologna vs Juventus: 3-3
-    *   25/05/2024 Juventus vs Monza: 2-0
+**Probabilidades de Resultado (Leeds vs Burnley):**
 
-**Bajas:**
-*   **Milan:** Luka Modrić (lesionado, pero también listado como posible titular, lo que indica incertidumbre).
-*   **Juventus:** No se reportaron bajas significativas en las búsquedas.
+*   **Leeds Gana:** (1-0, 2-0, 2-1, 3-0, 3-1, etc.) = 1 - P(Empate) - P(Burnley Gana)
+    *   P(Leeds Gana) = 0.77 (aprox.)
+*   **Empate:** (0-0, 1-1, 2-2, etc.)
+    *   P(0-0) = 0.179 * 0.835 = 0.149
+    *   P(1-1) = 0.316 * 0.150 = 0.047
+    *   P(Empate) = P(0-0) + P(1-1) + P(2-2) = 0.149 + 0.047 + (0.279 * 0.014) = 0.149 + 0.047 + 0.004 = 0.200 (aprox.)
+*   **Burnley Gana:** (0-1, 0-2, 1-2, etc.)
+    *   P(0-1) = 0.179 * 0.150 = 0.027
+    *   P(Burnley Gana) = 0.03 (aprox.)
 
-**Fuerza Ofensiva y Defensiva (Serie A - Promedio de Liga: 2.88 goles/partido, Local 1.6, Visitante 1.28):**
-*   FO(Milan) = 2.8 / 1.44 = 1.94
-*   FD(Milan) = 1.6 / 1.44 = 1.11
-*   FO(Juventus) = 1.4 / 1.44 = 0.97
-*   FD(Juventus) = 1.0 / 1.44 = 0.69
+**Resumen de Probabilidades (Leeds vs Burnley):**
 
-**Goles Esperados (λ):**
-*   λ(Milan - Local) = 1.94 \* 0.69 \* 1.6 = 2.14
-*   λ(Juventus - Visitante) = 0.97 \* 1.11 \* 1.28 = 1.38
-
-**Pronóstico con Distribución de Poisson (ejemplo):**
-*   P(Milan 2 goles) = e^(-2.14) \* (2.14^2 / 2!) = 0.28
-*   P(Milan 3 goles) = e^(-2.14) \* (2.14^3 / 3!) = 0.20
-*   P(Juventus 1 gol) = e^(-1.38) \* (1.38^1 / 1!) = 0.34
-*   P(Juventus 2 goles) = e^(-1.38) \* (1.38^2 / 2!) = 0.23
-
-**Resultados más probables:**
-*   Milan 2 - Juventus 1
-*   Milan 3 - Juventus 1
-*   Milan 2 - Juventus 2
-
-**Probabilidades (calculadas sumando los escenarios):**
-*   Victoria Milan: ~45%
-*   Empate: ~30%
-*   Victoria Juventus: ~25%
-
-**Recomendación CLV:**
-El Milan ha mostrado una mayor capacidad ofensiva en sus últimos partidos. Aunque la Juventus es un rival fuerte, especialmente a la defensiva, las lesiones en el Milan (Modric) podrían influir, pero su ataque sigue siendo potente. La **Victoria del Milan** es el pronóstico de mayor valor, considerando su rendimiento reciente en casa.
-
-**Tamaño de Inversión (Criterio de Kelly):**
-Si asumimos una cuota de 2.22 para la victoria del Milan (1/0.45). f = (1.22 \* 0.45 - 0.55) / 1.22 = (0.549 - 0.55) / 1.22 = -0.001 / 1.22.
-De nuevo, un valor negativo o muy bajo. Esto sugiere que las cuotas esperadas para la victoria del Milan ya están muy ajustadas a la probabilidad.
-
-**CLV Final:** **Más de 2.5 Goles**. Ambos equipos tienen potencial ofensivo, y a pesar de que el clásico puede ser cerrado, la tendencia de goles del Milan es alta.
-
-**Tamaño de Inversión (Revisado para "Más de 2.5 Goles"):**
-Probabilidad de más de 2.5 goles (ej. 58%). Si la cuota es 1.8 (b=0.8). f = (0.8 \* 0.58 - 0.42) / 0.8 = (0.464 - 0.42) / 0.8 = 0.044 / 0.8 = 0.055.
-Esto sugiere apostar un **5.5% de la banca** en "Más de 2.5 Goles".
+*   Leeds Gana: 77%
+*   Empate: 20%
+*   Burnley Gana: 3%
 
 ---
 
-### Resumen de Recomendaciones CLV y Tamaño de Inversión (Criterio de Kelly Teórico)
+**Partido 2: Girona vs Mallorca (La Liga)**
 
-**Consideraciones Clave:**
-*   Las predicciones se basan en un número limitado de partidos recientes (5).
-*   La ausencia de datos de xG reales y la estimación de promedios de liga introducen un sesgo.
-*   Las lesiones y suspensiones se han incorporado cualitativamente.
-*   El Criterio de Kelly es teórico ya que no tenemos cuotas de apuestas reales. He asumido "cuotas justas" basadas en mis probabilidades calculadas para ilustrar el tamaño de la apuesta. **En un escenario real, estas cuotas serían obtenidas de las casas de apuestas.**
+**Noticias en vivo / Alineaciones / Lesiones (01/05/2026):**
 
-| Partido                     | Pronóstico de Mayor Valor (CLV) | Probabilidad Estimada | Cuota Teórica Justa | Tamaño de Inversión (Kelly, % de Banca) | Notas                                                                                                                                                                                                                                                        |
-| :-------------------------- | :------------------------------ | :-------------------- | :------------------ | :-------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Espanyol vs Levante         | Victoria Levante o Empate (X2)  | ~75% (V.Lev 45%, E 30%) | ~1.33               | **25%**                                 | Levante muestra mejor forma, aunque con bajas. La ventaja de local del Espanyol no es suficiente dado su mal momento. La doble oportunidad reduce el riesgo.                                                                                                    |
-| Manchester United vs Brentford | Menos de 2.5 Goles              | ~55%                  | ~1.82               | **5%**                                  | Man Utd con bajas defensivas clave, y Brentford tiende a partidos cerrados y empates. Aunque Man Utd es favorito, se espera un partido con pocos goles.                                                                                                         |
-| Cagliari vs Atalanta        | Victoria Atalanta               | ~55%                  | ~1.82               | **5%**                                  | Atalanta, a pesar de bajas importantes, tiene mayor calidad y ambición europea. Cagliari está en dificultades. Se espera que Atalanta gane, pero con cautela debido a las ausencias.                                                                               |
-| Lazio vs Udinese            | Menos de 2.5 Goles              | ~65%                  | ~1.54               | **15%**                                 | Ambos equipos tienen defensas sólidas y ataques que no suelen golear. Un partido con pocos goles es el resultado más probable.                                                                                                                                 |
-| Milan vs Juventus           | Más de 2.5 Goles                | ~58%                  | ~1.72               | **5.5%**                                | El Milan ha mostrado un alto promedio de goles recientes. Aunque es un clásico, la tendencia ofensiva del Milan y la capacidad goleadora de ambos sugieren un partido con goles. La cuota justa calculada es 1.72, si la del mercado es más alta, el valor aumenta. |
+*   **Girona:** Están en la parte baja de la tabla, con el descenso acechando. No han ganado sus últimos tres partidos (1 empate, 2 derrotas), incluyendo una derrota 2-1 ante Valencia. En casa, han perdido solo dos veces en siete partidos (4 victorias, 1 empate). Bajas por lesión: Juan Carlos, Portu, Marc-Andre ter Stegen, Abel Ruiz, Vladyslav Vanat. Álex Moreno está suspendido. Joel Roca es un jugador clave que anotó recientemente.
+*   **Mallorca:** Están en la 17ª posición de La Liga, cerca de la zona de descenso. Sufrieron una derrota 2-1 ante Alavés la semana pasada. No han ganado como visitantes desde octubre (3 empates, 8 derrotas), perdiendo 6 de sus últimos 7 partidos fuera de casa. Vedat Muriqi es el máximo goleador del Mallorca con 21 goles esta temporada. Bajas por lesión: Jan Salas, Mateo Joseph, Antonio Raíllo. Zito Luvumbo ha estado ausente en los últimos dos partidos.
 
-Este análisis proporciona una guía basada en los datos disponibles y la metodología cuantitativa solicitada. La naturaleza dinámica del fútbol, especialmente con lesiones y alineaciones finales, puede influir en los resultados.
+**Cálculos Cuantitativos (La Liga):**
+
+*   Promedio Goles Local La Liga = 1.11
+*   Promedio Goles Visitante La Liga = 1.00
+
+**Girona (Local):**
+
+*   Goles a favor en casa (3 partidos): 4, 0, 7 = Promedio 3.67
+*   Goles en contra en casa (3 partidos): 2, 1, 0 = Promedio 1.0
+*   AS_Girona = (3.67 / 1.11) = 3.31
+*   DS_Girona = (1.0 / 1.00) = 1.00
+
+**Mallorca (Visitante):**
+
+*   Goles a favor fuera (3 partidos): 0, 1, 2 = Promedio 1.0
+*   Goles en contra fuera (3 partidos): 1, 1, 1 = Promedio 1.0
+*   AS_Mallorca = (1.0 / 1.00) = 1.00
+*   DS_Mallorca = (1.0 / 1.11) = 0.90
+
+**xG Girona vs Mallorca:**
+
+*   xG_Girona = AS_Girona * DS_Mallorca * Promedio_Goles_Casa_LaLiga = 3.31 * 0.90 * 1.11 = 3.30
+*   xG_Mallorca = AS_Mallorca * DS_Girona * Promedio_Goles_Visitante_LaLiga = 1.00 * 1.00 * 1.00 = 1.00
+
+**Distribución de Poisson (probabilidades de goles):**
+
+| Goles | P(Girona) | P(Mallorca) |
+| :---- | :-------- | :---------- |
+| 0     | 0.037     | 0.368       |
+| 1     | 0.122     | 0.368       |
+| 2     | 0.202     | 0.184       |
+| 3     | 0.222     | 0.061       |
+
+**Probabilidades de Resultado (Girona vs Mallorca):**
+
+*   **Girona Gana:** (1-0, 2-0, 2-1, 3-0, 3-1, etc.) = 1 - P(Empate) - P(Mallorca Gana)
+    *   P(Girona Gana) = 0.69 (aprox.)
+*   **Empate:** (0-0, 1-1, 2-2, etc.)
+    *   P(0-0) = 0.037 * 0.368 = 0.014
+    *   P(1-1) = 0.122 * 0.368 = 0.045
+    *   P(2-2) = 0.202 * 0.184 = 0.037
+    *   P(Empate) = 0.014 + 0.045 + 0.037 = 0.096 (aprox.)
+*   **Mallorca Gana:** (0-1, 0-2, 1-2, etc.)
+    *   P(0-1) = 0.037 * 0.368 = 0.014
+    *   P(Mallorca Gana) = 0.21 (aprox.)
+
+**Resumen de Probabilidades (Girona vs Mallorca):**
+
+*   Girona Gana: 69%
+*   Empate: 10%
+*   Mallorca Gana: 21%
+
+---
+
+**Partido 3: Pisa vs Lecce (Serie A)**
+
+**Noticias en vivo / Alineaciones / Lesiones (01/05/2026):**
+
+*   **Pisa:** Están en la 20ª posición de la Serie A, al borde del descenso a la Serie B. Han perdido 9 de sus últimos 10 partidos de liga (1 victoria). Oscar Hiljemark es su entrenador. No han marcado en 19 partidos de Serie A esta temporada. Bajas por lesión: Daniel Tyrell Denoon (duda), Marius Marin (duda), Matteo Tramoni (duda).
+*   **Lecce:** Están en la 17ª posición, ligeramente mejor, pero aún no están a salvo del descenso. Vienen de dos empates (0-0 vs Hellas Verona, 1-1 vs Fiorentina) después de 4 derrotas consecutivas. Eusebio Di Francesco es su entrenador. Francesco Camarda (hombro) ha sido dado de alta.
+
+**Cálculos Cuantitativos (Serie A):**
+
+*   Promedio Goles Local Serie A = 1.62
+*   Promedio Goles Visitante Serie A = 1.38
+
+**Pisa (Local):**
+
+*   Goles a favor en casa (3 partidos): 3 (vs Cagliari), 0 (vs Torino), 1 (vs Genoa) = Promedio 1.33
+*   Goles en contra en casa (3 partidos): 1 (vs Cagliari), 1 (vs Torino), 2 (vs Genoa) = Promedio 1.33
+*   AS_Pisa = (1.33 / 1.62) = 0.82
+*   DS_Pisa = (1.33 / 1.38) = 0.96
+
+**Lecce (Visitante):**
+
+*   Goles a favor fuera (3 partidos): 1 (vs Monza), 1 (vs Cagliari), 0 (vs Napoli) = Promedio 0.67
+*   Goles en contra fuera (3 partidos): 1 (vs Monza), 1 (vs Cagliari), 0 (vs Napoli) = Promedio 0.67
+*   AS_Lecce = (0.67 / 1.38) = 0.49
+*   DS_Lecce = (0.67 / 1.62) = 0.41
+
+**xG Pisa vs Lecce:**
+
+*   xG_Pisa = AS_Pisa * DS_Lecce * Promedio_Goles_Casa_SerieA = 0.82 * 0.41 * 1.62 = 0.54
+*   xG_Lecce = AS_Lecce * DS_Pisa * Promedio_Goles_Visitante_SerieA = 0.49 * 0.96 * 1.38 = 0.65
+
+**Distribución de Poisson (probabilidades de goles):**
+
+| Goles | P(Pisa) | P(Lecce) |
+| :---- | :------ | :------- |
+| 0     | 0.583   | 0.522    |
+| 1     | 0.315   | 0.340    |
+| 2     | 0.085   | 0.111    |
+| 3     | 0.015   | 0.024    |
+
+**Probabilidades de Resultado (Pisa vs Lecce):**
+
+*   **Pisa Gana:** (1-0, 2-0, 2-1, etc.) = 1 - P(Empate) - P(Lecce Gana)
+    *   P(Pisa Gana) = 0.35 (aprox.)
+*   **Empate:** (0-0, 1-1, 2-2, etc.)
+    *   P(0-0) = 0.583 * 0.522 = 0.304
+    *   P(1-1) = 0.315 * 0.340 = 0.107
+    *   P(Empate) = 0.304 + 0.107 + (0.085 * 0.111) = 0.304 + 0.107 + 0.009 = 0.420 (aprox.)
+*   **Lecce Gana:** (0-1, 0-2, 1-2, etc.)
+    *   P(0-1) = 0.583 * 0.340 = 0.198
+    *   P(Lecce Gana) = 0.23 (aprox.)
+
+**Resumen de Probabilidades (Pisa vs Lecce):**
+
+*   Pisa Gana: 35%
+*   Empate: 42%
+*   Lecce Gana: 23%
+
+---
+
+### Sugerencia de Pronóstico de Mayor Valor (CLV)
+
+El "Closing Line Value" (CLV) se refiere a obtener una cuota en una apuesta que es mejor que la cuota final ofrecida por las casas de apuestas antes del inicio del partido. Para sugerir un pronóstico de "mayor valor", necesitaría las cuotas actuales de las casas de apuestas para compararlas con mis probabilidades calculadas. Sin cuotas de casas de apuestas, no puedo determinar el CLV.
+
+En su lugar, proporcionaré los resultados más probables según mi modelo:
+
+1.  **Leeds vs Burnley:**
+    *   **Pronóstico más probable:** Victoria de Leeds (probabilidad del 77%).
+    *   **Marcadores más probables:** 1-0 (Leeds), 2-0 (Leeds)
+    *   **Consideración:** Leeds está en mejor forma general en la liga y Burnley ya está descendido y tiene muchas lesiones. La diferencia de xG es muy alta (1.76 vs 0.18).
+
+2.  **Girona vs Mallorca:**
+    *   **Pronóstico más probable:** Victoria de Girona (probabilidad del 69%).
+    *   **Marcadores más probables:** 3-1 (Girona), 2-1 (Girona)
+    *   **Consideración:** Aunque ambos equipos luchan contra el descenso y Mallorca tiene a Muriqi, el rendimiento ofensivo del Girona en casa en los datos recientes es muy fuerte, y Mallorca tiene un pobre récord como visitante.
+
+3.  **Pisa vs Lecce:**
+    *   **Pronóstico más probable:** Empate (probabilidad del 42%).
+    *   **Marcadores más probables:** 0-0, 1-1
+    *   **Consideración:** Ambos equipos están en la parte baja de la tabla y luchando por la supervivencia, con Pisa en peor forma general. El modelo predice un partido con pocos goles y una alta probabilidad de empate.
+
+### Recomendación de Tamaño de Inversión (Criterio de Kelly)
+
+El Criterio de Kelly (`f = (bp - q) / b`) requiere:
+
+*   `f`: La fracción de tu bankroll para apostar.
+*   `b`: Las probabilidades decimales de la casa de apuestas menos 1 (o la ganancia neta por unidad apostada).
+*   `p`: Tu probabilidad percibida de que el resultado ocurra (mis probabilidades de Poisson).
+*   `q`: Tu probabilidad percibida de que el resultado *no* ocurra (1 - p).
+
+Dado que no se proporcionaron las cuotas de las casas de apuestas ni el tamaño del bankroll, no puedo aplicar el Criterio de Kelly directamente para dar un tamaño de inversión concreto.
+
+**Principio del Criterio de Kelly:**
+El Criterio de Kelly busca optimizar el crecimiento del bankroll a largo plazo. Recomienda apostar una mayor proporción del capital cuando la "ventaja" es mayor (es decir, cuando tu probabilidad percibida es significativamente mayor que la probabilidad implícita de las cuotas de la casa de apuestas). Si tu probabilidad percibida es igual o menor que la implícita en las cuotas, el criterio de Kelly recomendaría no apostar.
+
+**Para poder usar el Criterio de Kelly, necesitaría:**
+
+1.  **Las cuotas exactas ofrecidas por una casa de apuestas** para los resultados de Leeds vs Burnley (1X2), Girona vs Mallorca (1X2) y Pisa vs Lecce (1X2).
+2.  **Un bankroll definido** para calcular la cantidad monetaria a apostar.
+
+**Conclusión sin datos de cuotas/bankroll:**
+Basándome en mis probabilidades calculadas:
+
+*   **Leeds vs Burnley:** Si las cuotas para la victoria de Leeds son suficientemente altas (por ejemplo, >1.30-1.40, lo que implicaría una probabilidad inferior al 77%), podría haber valor para una apuesta. Dada la alta probabilidad, si encuentras cuotas de valor, el Kelly podría sugerir una inversión moderada a alta.
+*   **Girona vs Mallorca:** Similarmente, si las cuotas para la victoria de Girona superan el 1.45 (probabilidad implícita < 69%), podría haber valor.
+*   **Pisa vs Lecce:** La probabilidad de empate es la más alta (42%). Si las cuotas para el empate son atractivas (por ejemplo, >2.40), podría considerarse una apuesta. Sin embargo, en partidos con alta probabilidad de empate y bajos xG para ambos lados, las apuestas a "menos de X goles" (Under X goals) suelen ser también una buena opción.
+
+Recomiendo buscar cuotas de valor para la victoria de Leeds y Girona, y para el empate en el partido de Pisa vs Lecce, y luego aplicar el Criterio de Kelly con su bankroll y las cuotas encontradas.
+
+---
+**Consideraciones Finales sobre la calidad de los datos:**
+Reitero la limitación sobre la antigüedad de los datos de algunos equipos, especialmente en la Bundesliga y algunos de la Serie A. Utilizar datos de 2023 o 2024 para predecir partidos en 2026 introduce un riesgo significativo de imprecisión debido a cambios en plantillas, entrenadores, tácticas y dinámicas de liga. Las predicciones para los partidos de la Premier League y La Liga son más fiables en este aspecto.
