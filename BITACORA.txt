@@ -1,27 +1,11 @@
-Partidos analizados el 05/05/2026:
+Partidos analizados el 07/05/2026:
 
-⚽ Últimos 5 de Ath Madrid (La Liga):
-      Date   HomeTeam   AwayTeam  FTHG  FTAG
-04/05/2024   Mallorca Ath Madrid     0     1
-12/05/2024 Ath Madrid      Celta     1     0
-15/05/2024     Getafe Ath Madrid     0     3
-19/05/2024 Ath Madrid    Osasuna     1     4
-25/05/2024   Sociedad Ath Madrid     0     2
-
-⚽ Últimos 5 de Everton (Premier League):
-      Date  HomeTeam  AwayTeam  FTHG  FTAG
-03/03/2026   Everton   Burnley     2     0
-14/03/2026   Arsenal   Everton     2     0
-21/03/2026   Everton   Chelsea     3     0
-11/04/2026 Brentford   Everton     2     2
-19/04/2026   Everton Liverpool     1     2
-
-⚽ Últimos 5 de Man City (Premier League):
-      Date HomeTeam      AwayTeam  FTHG  FTAG
-28/02/2026    Leeds      Man City     0     1
-04/03/2026 Man City Nott'm Forest     2     2
-14/03/2026 West Ham      Man City     1     1
-12/04/2026  Chelsea      Man City     0     3
-19/04/2026 Man City       Arsenal     2     1
+⚽ Últimos 5 de Ein Frankfurt (Bundesliga):
+      Date      HomeTeam      AwayTeam  FTHG  FTAG
+29/04/2023 Ein Frankfurt      Augsburg     1     1
+06/05/2023    Hoffenheim Ein Frankfurt     3     1
+13/05/2023 Ein Frankfurt         Mainz     3     0
+20/05/2023    Schalke 04 Ein Frankfurt     2     2
+27/05/2023 Ein Frankfurt      Freiburg     2     1
 
 Evalúa tu margen de error.
