@@ -1,4 +1,20 @@
-Partidos analizados el 07/05/2026:
+Partidos analizados el 08/05/2026:
+
+⚽ Últimos 5 de Sassuolo (Serie A):
+      Date   HomeTeam AwayTeam  FTHG  FTAG
+28/04/2024 Fiorentina Sassuolo     5     1
+04/05/2024   Sassuolo    Inter     1     0
+12/05/2024      Genoa Sassuolo     2     1
+19/05/2024   Sassuolo Cagliari     0     2
+26/05/2024      Lazio Sassuolo     1     1
+
+⚽ Últimos 5 de Dortmund (Bundesliga):
+      Date HomeTeam   AwayTeam  FTHG  FTAG
+28/04/2023   Bochum   Dortmund     1     1
+07/05/2023 Dortmund  Wolfsburg     6     0
+13/05/2023 Dortmund M'gladbach     5     2
+21/05/2023 Augsburg   Dortmund     0     3
+27/05/2023 Dortmund      Mainz     2     2
 
 ⚽ Últimos 5 de Ein Frankfurt (Bundesliga):
       Date      HomeTeam      AwayTeam  FTHG  FTAG
@@ -7,5 +23,21 @@ Partidos analizados el 07/05/2026:
 13/05/2023 Ein Frankfurt         Mainz     3     0
 20/05/2023    Schalke 04 Ein Frankfurt     2     2
 27/05/2023 Ein Frankfurt      Freiburg     2     1
+
+⚽ Últimos 5 de Levante (La Liga):
+      Date  HomeTeam AwayTeam  FTHG  FTAG
+07/03/2026   Levante   Girona     1     1
+16/03/2026 Vallecano  Levante     1     1
+21/03/2026   Levante   Oviedo     4     2
+04/04/2026  Sociedad  Levante     2     0
+13/04/2026   Levante   Getafe     1     0
+
+⚽ Últimos 5 de Osasuna (La Liga):
+      Date   HomeTeam   AwayTeam  FTHG  FTAG
+05/05/2024    Osasuna      Betis     0     2
+11/05/2024 Ath Bilbao    Osasuna     2     2
+14/05/2024    Osasuna   Mallorca     1     1
+19/05/2024 Ath Madrid    Osasuna     1     4
+25/05/2024    Osasuna Villarreal     1     1
 
 Evalúa tu margen de error.
